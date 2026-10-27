@@ -127,3 +127,10 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
+
+
+# Use 64-bit ids for all tables
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Live MTA service-alerts feed (used by myapp/mta.py)
+MTA_ALERTS_URL = 'https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/camsys%2Fsubway-alerts.json'
