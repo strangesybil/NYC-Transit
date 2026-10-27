@@ -1,6 +1,12 @@
+from datetime import datetime, timezone as dt_timezone
+
 from django.conf import settings
 from django.db import models
 from django.utils import timezone
+
+
+def _to_datetime(epoch):
+    return datetime.fromtimestamp(epoch, tz=dt_timezone.utc) if epoch is not None else None
 
 
 class ServiceAlert(models.Model):
@@ -11,8 +17,11 @@ class ServiceAlert(models.Model):
     header = models.TextField()  # short headline
     description = models.TextField(blank=True)  # longer explanation
     routes = models.CharField(max_length=200, blank=True)  # affected lines, e.g. "A,C,E"
-    start_time = models.DateTimeField(null=True, blank=True)
-    end_time = models.DateTimeField(null=True, blank=True)
+    start_time = models.DateTimeField(null=True, blank=True)  # earliest start (for sorting)
+    end_time = models.DateTimeField(null=True, blank=True)  # latest end (for display)
+    # EVERY time window the alert applies to: [[start_epoch, end_epoch], ...]
+    # (planned work often lists many nights/weekends). None = open ended.
+    periods = models.JSONField(default=list, blank=True)
     fetched_at = models.DateTimeField(auto_now=True)  # when WE last saved it
 
     class Meta:
@@ -25,18 +34,36 @@ class ServiceAlert(models.Model):
     def route_list(self):
         return [r for r in self.routes.split(",") if r]
 
-    def is_expired(self, now=None):
-        now = now or timezone.now()
-        return bool(self.end_time and self.end_time < now)
-
-    def is_upcoming(self, now=None):
-        now = now or timezone.now()
-        return bool(self.start_time and self.start_time > now)
+    def _windows(self):
+        """All (start, end) windows. Falls back to start_time/end_time for older saved rows."""
+        if self.periods:
+            return [(_to_datetime(s), _to_datetime(e)) for s, e in self.periods]
+        if self.start_time or self.end_time:
+            return [(self.start_time, self.end_time)]
+        return []
 
     def is_active(self, now=None):
-        """True only while the alert is happening right now."""
+        """True while ANY of the alert's time windows is happening right now."""
         now = now or timezone.now()
-        return not self.is_expired(now) and not self.is_upcoming(now)
+        windows = self._windows()
+        if not windows:
+            return True  # no schedule given -> treat as in effect
+        return any(
+            (start is None or start <= now) and (end is None or end >= now)
+            for start, end in windows
+        )
+
+    def is_upcoming(self, now=None):
+        """Not happening now, but at least one window is still to come."""
+        now = now or timezone.now()
+        if self.is_active(now):
+            return False
+        return any(start is not None and start > now for start, _ in self._windows())
+
+    def is_expired(self, now=None):
+        """Every window is over."""
+        now = now or timezone.now()
+        return not self.is_active(now) and not self.is_upcoming(now)
 
 
 class Favorite(models.Model):

@@ -18,7 +18,8 @@ DEFAULT_ALERTS_URL = (
 SUBWAY_ROUTES = [
     "1", "2", "3", "4", "5", "6", "7",
     "A", "C", "E", "B", "D", "F", "M",
-    "G", "J", "Z", "L", "N", "Q", "R", "W", "S",
+    "G", "J", "Z", "L", "N", "Q", "R", "W",
+    "GS", "FS", "H", "SI",  # 42 St shuttle, Franklin shuttle, Rockaway shuttle, Staten Island
 ]
 
 
@@ -39,11 +40,18 @@ def _text(block):
     return translations[0].get("text", "") if translations else ""
 
 
-def _timestamp(value):
-    """Seconds-since-1970 (int or str) -> datetime, or None if missing/invalid."""
+def _epoch(value):
+    """Seconds-since-1970 (int or str) -> int, or None if missing/invalid."""
     try:
-        return datetime.fromtimestamp(int(value), tz=timezone.utc)
-    except (TypeError, ValueError, OSError):
+        return int(value)
+    except (TypeError, ValueError):
+        return None
+
+
+def _to_datetime(epoch):
+    try:
+        return datetime.fromtimestamp(epoch, tz=timezone.utc) if epoch is not None else None
+    except (OverflowError, OSError, ValueError):
         return None
 
 
@@ -58,7 +66,18 @@ def parse_alerts(payload):
             {e["route_id"] for e in alert.get("informed_entity", []) if e.get("route_id")}
         )
         mercury = alert.get("transit_realtime.mercury_alert") or {}
-        period = (alert.get("active_period") or [{}])[0]
+
+        # Keep EVERY time window, not just the first one.
+        periods = [
+            [_epoch(p.get("start")), _epoch(p.get("end"))]
+            for p in (alert.get("active_period") or [])
+        ]
+        starts = [st for st, _ in periods if st is not None]
+        ends = [en for _, en in periods]
+        start_time = _to_datetime(min(starts)) if starts else None
+        # If any window is open-ended, the alert has no overall end.
+        end_time = _to_datetime(max(ends)) if ends and all(e is not None for e in ends) else None
+
         alerts.append(
             {
                 "alert_id": str(entity.get("id", "")),
@@ -66,8 +85,9 @@ def parse_alerts(payload):
                 "header": _text(alert.get("header_text")),
                 "description": _text(alert.get("description_text")),
                 "routes": ",".join(routes),
-                "start_time": _timestamp(period.get("start")),
-                "end_time": _timestamp(period.get("end")),
+                "start_time": start_time,
+                "end_time": end_time,
+                "periods": periods,
             }
         )
     return alerts
@@ -75,23 +95,29 @@ def parse_alerts(payload):
 
 @transaction.atomic
 def save_alerts(parsed):
-    """Store alerts; remove any the MTA no longer lists. Returns how many are stored."""
-    ids = []
-    for item in parsed:
-        if not item["alert_id"]:
-            continue
-        ids.append(item["alert_id"])
+    """Store alerts; remove any the MTA no longer lists. Returns how many are stored.
+
+    Safety: if there is nothing valid to save, we change NOTHING (an empty or broken
+    feed must never erase the alerts we already have).
+    """
+    items = [item for item in parsed if item["alert_id"]]
+    if not items:
+        return 0
+    for item in items:
         ServiceAlert.objects.update_or_create(
             alert_id=item["alert_id"],
             defaults={k: v for k, v in item.items() if k != "alert_id"},
         )
-    ServiceAlert.objects.exclude(alert_id__in=ids).delete()
-    return len(ids)
+    ServiceAlert.objects.exclude(alert_id__in=[i["alert_id"] for i in items]).delete()
+    return len(items)
 
 
 def sync_alerts():
     """Download + parse + save. This is what refreshes our live data."""
-    return save_alerts(parse_alerts(fetch_alerts_payload()))
+    parsed = parse_alerts(fetch_alerts_payload())
+    if not parsed:
+        raise ValueError("the MTA feed had no alerts (empty response or changed format)")
+    return save_alerts(parsed)
 
 
 def route_statuses():

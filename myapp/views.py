@@ -3,24 +3,31 @@ import time
 from django.http import JsonResponse
 from django.utils import timezone
 
-from .mta import route_statuses, sync_alerts
 from .models import ServiceAlert
+from .mta import route_statuses, sync_alerts
 
-CACHE_SECONDS = 60  # don't hit the MTA more than once a minute
-_last_sync = 0.0
+CACHE_SECONDS = 60  # contact the MTA at most once a minute (even when it is failing)
+_last_attempt = None  # when we last TRIED to refresh (success or failure)
+_last_warning = None  # the problem from that attempt, if any
 
 
 def _refresh_if_stale():
-    """Refresh from the MTA if our data is older than a minute. Returns an error text or None."""
-    global _last_sync
-    if time.monotonic() - _last_sync < CACHE_SECONDS:
-        return None
+    """Refresh from the MTA at most once a minute. Returns a warning text or None."""
+    global _last_attempt, _last_warning
+    if _last_attempt is not None and time.monotonic() - _last_attempt < CACHE_SECONDS:
+        return _last_warning  # still inside the cooldown: no slow retry
+    _last_attempt = time.monotonic()  # set BEFORE the call so failures also cool down
     try:
         sync_alerts()
-        _last_sync = time.monotonic()
-        return None
-    except Exception as exc:  # network down, MTA changed format, etc.
-        return f"Could not reach the MTA ({exc}); showing the last saved data."
+        _last_warning = None
+    except Exception as exc:  # network down, empty feed, MTA changed format, etc.
+        saved = (
+            "showing the last saved data"
+            if ServiceAlert.objects.exists()
+            else "no saved data is available yet"
+        )
+        _last_warning = f"Could not refresh from the MTA ({exc}); {saved}."
+    return _last_warning
 
 
 def alerts_api(request):
