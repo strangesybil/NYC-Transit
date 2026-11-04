@@ -1,0 +1,50 @@
+{% load static %}<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NYC Transit Hub — Service Status</title>
+  <link rel="stylesheet" href="{% static 'myapp/dashboard.css' %}">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h1>NYC Transit Hub</h1>
+      <p class="subtitle">Live subway service status</p>
+    </div>
+    <div class="meta">
+      <span id="updated" class="updated">Loading…</span>
+      <button id="refresh" class="btn" type="button">Refresh</button>
+    </div>
+  </header>
+
+  <div id="warning" class="warning" hidden></div>
+
+  <main class="layout">
+    <section class="board" aria-labelledby="board-title">
+      <div class="board-head">
+        <h2 id="board-title">All lines</h2>
+        <div class="summary" id="summary" aria-live="polite"></div>
+        <label class="toggle">
+          <input type="checkbox" id="issues-only">
+          Only show lines with issues
+        </label>
+      </div>
+      <div id="groups" class="groups"></div>
+    </section>
+
+    <aside class="details" id="details" aria-live="polite">
+      <div class="details-empty">
+        <h2>Pick a line</h2>
+        <p>Click any line to see its current alerts and upcoming planned work.</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    Data from the MTA service alerts feed. Refreshes every minute.
+  </footer>
+
+  <script src="{% static 'myapp/dashboard.js' %}"></script>
+</body>
+</html>
