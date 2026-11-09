@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.1/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -134,3 +135,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Live MTA service-alerts feed (used by myapp/mta.py)
 MTA_ALERTS_URL = 'https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/camsys%2Fsubway-alerts.json'
+
+# Firebase sign-in (Task 6). These are the Firebase *web app* settings from
+# Firebase console -> Project settings -> Your apps. They are NOT secrets (Firebase
+# ships them to every browser), so it's fine to paste them here. Environment
+# variables with the same names override them. Leave projectId empty to turn
+# sign-in off: the dashboard still works, it just hides the sign-in button.
+FIREBASE_WEB_CONFIG = {
+    'apiKey': os.environ.get('FIREBASE_API_KEY', ''),
+    'authDomain': os.environ.get('FIREBASE_AUTH_DOMAIN', ''),
+    'projectId': os.environ.get('FIREBASE_PROJECT_ID', ''),
+    'appId': os.environ.get('FIREBASE_APP_ID', ''),
+}
