@@ -1,6 +1,7 @@
 import time
 
 from django.http import JsonResponse
+from django.shortcuts import render
 from django.utils import timezone
 
 from .models import ServiceAlert
@@ -58,3 +59,8 @@ def status_api(request):
     """GET /api/status/  -> one status per subway line (feeds the dashboard in Task 5)."""
     warning = _refresh_if_stale()
     return JsonResponse({"warning": warning, "routes": route_statuses()})
+
+
+def dashboard(request):
+    """GET /  -> the service status dashboard page (Task 5). Data loads from the APIs above."""
+    return render(request, "myapp/dashboard.html")

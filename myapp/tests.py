@@ -194,3 +194,11 @@ class ApiTests(TestCase):
         save_alerts(parse_alerts(ACTIVE))
         warning = self.client.get("/api/alerts/").json()["warning"]
         self.assertIn("last saved data", warning)
+
+
+class DashboardPageTests(TestCase):
+    def test_dashboard_page_loads(self):
+        response = self.client.get("/")
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "NYC Transit Hub")
+        self.assertContains(response, "myapp/dashboard.js")
