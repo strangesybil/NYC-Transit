@@ -142,8 +142,8 @@ MTA_ALERTS_URL = 'https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/camsys%
 # variables with the same names override them. Leave projectId empty to turn
 # sign-in off: the dashboard still works, it just hides the sign-in button.
 FIREBASE_WEB_CONFIG = {
-    'apiKey': os.environ.get('FIREBASE_API_KEY', ''),
-    'authDomain': os.environ.get('FIREBASE_AUTH_DOMAIN', ''),
-    'projectId': os.environ.get('FIREBASE_PROJECT_ID', ''),
-    'appId': os.environ.get('FIREBASE_APP_ID', ''),
+    'apiKey': os.environ.get('FIREBASE_API_KEY', 'AIzaSyCtjwnOaU7g___KKzZeqmHpsgdxl_Y6RNY'),
+    'authDomain': os.environ.get('FIREBASE_AUTH_DOMAIN', 'nyc-transit-b538f.firebaseapp.com'),
+    'projectId': os.environ.get('FIREBASE_PROJECT_ID', 'nyc-transit-b538f'),
+    'appId': os.environ.get('FIREBASE_APP_ID', '1:91280228147:web:7fefa9c4e0bb9073c8c846'),
 }
