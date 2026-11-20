@@ -1,9 +1,11 @@
 import time
 
+from django.conf import settings
 from django.http import JsonResponse
 from django.shortcuts import render
 from django.utils import timezone
 
+from . import elevators, firebase_auth
 from .models import ServiceAlert
 from .mta import route_statuses, sync_alerts
 
@@ -61,6 +63,19 @@ def status_api(request):
     return JsonResponse({"warning": warning, "routes": route_statuses()})
 
 
+def elevators_api(request):
+    """GET /api/elevators/   /api/elevators/?route=A  -> elevator/escalator outages (accessibility)."""
+    outages, warning = elevators.get_outages()
+    route = request.GET.get("route", "").strip().upper()
+    if route:
+        outages = [o for o in outages if route in o["lines"]]
+    return JsonResponse({"count": len(outages), "warning": warning, "outages": outages})
+
+
 def dashboard(request):
     """GET /  -> the service status dashboard page (Task 5). Data loads from the APIs above."""
-    return render(request, "myapp/dashboard.html")
+    return render(
+        request,
+        "myapp/dashboard.html",
+        {"firebase_config": settings.FIREBASE_WEB_CONFIG if firebase_auth.is_configured() else None},
+    )
