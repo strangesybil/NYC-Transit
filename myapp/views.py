@@ -72,10 +72,10 @@ def elevators_api(request):
     return JsonResponse({"count": len(outages), "warning": warning, "outages": outages})
 
 
-def dashboard(request):
+def dashboard(request, page="lines"):
     """GET /  -> the service status dashboard page (Task 5). Data loads from the APIs above."""
     return render(
         request,
         "myapp/dashboard.html",
-        {"firebase_config": settings.FIREBASE_WEB_CONFIG if firebase_auth.is_configured() else None},
+        {"firebase_config": settings.FIREBASE_WEB_CONFIG if firebase_auth.is_configured() else None, "page": page},
     )

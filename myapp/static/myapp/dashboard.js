@@ -1,12 +1,16 @@
+import {accessibilityText, LINE_COLORS, el, bullet, icon, longName, shortName, routeText, saveControl, alertPreview, equipmentReport} from "./components.js";
 // NYC Transit Hub dashboard.
 //   /api/status/      one status per line        -> headline + line grid
 //   /api/alerts/      the MTA's service alerts   -> "What's wrong right now" + details
 //   /api/elevators/   broken elevators/escalators -> details + accessibility badges
 // Sign-in is in auth.js, saved lines in favorites.js.
 
+import { savedStations, isStationSaved, stationPending, toggleStation } from "./favorites.js";
+import { searchStations, stationAlerts, stationOutages } from "./stations.js";
 import { signIn, signOut, startAuth } from "./auth.js";
 import { favoriteRoutes, isFavorite, isPending, loadFavorites, onFavoritesChange, toggleFavorite } from "./favorites.js";
 
+const page = document.body.dataset.page || "lines";
 const STATUS_URL = "/api/status/";
 const ALERTS_URL = "/api/alerts/";
 const ELEVATORS_URL = "/api/elevators/";
@@ -15,27 +19,7 @@ const TOAST_MS = 5000;
 const GOOD_SERVICE = "Good Service";
 const ISSUES_ONLY_KEY = "nyc-transit-issues-only";
 const NOTIFY_KEY = "nyc-transit-notify";
-const MOBILE_QUERY = "(max-width: 900px)";
 const MAX_HEADLINE_BULLETS = 6; // more than this and the headline just gives a count
-const OUTAGES_SHOWN = 4; // the rest fold under "Show N more"
-
-// Official MTA line colors.
-const LINE_COLORS = {
-  1: "#EE352E", 2: "#EE352E", 3: "#EE352E",
-  4: "#00933C", 5: "#00933C", 6: "#00933C",
-  7: "#B933AD",
-  A: "#0039A6", C: "#0039A6", E: "#0039A6",
-  B: "#FF6319", D: "#FF6319", F: "#FF6319", M: "#FF6319",
-  G: "#6CBE45",
-  J: "#996633", Z: "#996633",
-  L: "#A7A9AC",
-  N: "#FCCC0A", Q: "#FCCC0A", R: "#FCCC0A", W: "#FCCC0A",
-  GS: "#808183", FS: "#808183", H: "#808183",
-  SI: "#0039A6",
-};
-const DARK_TEXT_LINES = ["N", "Q", "R", "W"]; // yellow bullets need black letters
-const DISPLAY_NAMES = { GS: "S", FS: "S", H: "S", SI: "SIR" }; // the feed's ids vs what riders call them
-const LINE_NAMES = { GS: "42 St Shuttle", FS: "Franklin Av Shuttle", H: "Rockaway Park Shuttle", SI: "Staten Island Railway" };
 
 const $ = (id) => document.getElementById(id);
 const els = {
@@ -47,9 +31,13 @@ const els = {
   meAvatar: $("me-avatar"), signOutBtn: $("sign-out"),
 };
 
+let stations = [];
+let catalogReady = false;
+let authGeneration = 0;
 let statuses = {}; // { A: { status: "Delays", alerts: 1, upcoming: 2 }, ... }
 let activeAlerts = []; // alerts happening right now, all lines
 let outages = []; // elevator/escalator outages, all lines
+let equipmentWarning = "";
 let selected = null; // { route, alerts } for the details panel
 let authOn = false;
 let user = null;
@@ -59,15 +47,6 @@ let toastTimer = null;
 
 // ---------- small helpers ----------
 
-function el(tag, className, text) {
-  const node = document.createElement(tag);
-  if (className) node.className = className;
-  if (text !== undefined) node.textContent = text; // textContent: feed text can't inject HTML
-  return node;
-}
-
-const shortName = (route) => DISPLAY_NAMES[route] || route;
-const longName = (route) => LINE_NAMES[route] || `${route} line`;
 const statusOf = (route) => statuses[route] || { status: GOOD_SERVICE, alerts: 0, upcoming: 0 };
 
 function severity(status) {
@@ -79,15 +58,6 @@ function severity(status) {
 function statusWord(status) {
   if (severity(status) === "planned") return "Planned work";
   return status.charAt(0) + status.slice(1).toLowerCase();
-}
-
-function bullet(route, size = "") {
-  const b = el("span", `bullet ${size}`.trim(), shortName(route));
-  b.style.setProperty("--line", LINE_COLORS[route] || "#808183");
-  if (DARK_TEXT_LINES.includes(route)) b.classList.add("dark-text");
-  if (shortName(route).length > 1) b.classList.add("wide");
-  b.setAttribute("aria-label", longName(route));
-  return b;
 }
 
 function elevatorsOut(route) {
@@ -124,6 +94,7 @@ async function getJSON(url) {
 // ---------- headline: the whole subway in one sentence ----------
 
 function renderHeadline() {
+  if (page === "stations") return;
   const routes = Object.keys(statuses);
   if (!routes.length) return;
   const problems = new Map(); // "Delays" -> ["A", "C"]
@@ -169,7 +140,7 @@ function lineRow(route) {
 }
 
 function renderMine() {
-  els.mine.hidden = !(authOn && user);
+  els.mine.hidden = page === "stations" || !(authOn && user);
   if (els.mine.hidden) return;
   const routes = favoriteRoutes();
   els.mineList.replaceChildren(
@@ -184,6 +155,7 @@ function renderMine() {
 // ---------- what's wrong right now ----------
 
 function renderProblems() {
+  if (page === "stations") { els.problems.hidden = true; return; }
   const now = activeAlerts.filter((a) => !(a.type || "").startsWith("Planned") && a.routes.length);
   els.problems.hidden = !now.length;
   els.problemList.replaceChildren(
@@ -207,6 +179,7 @@ function renderProblems() {
 // ---------- every line ----------
 
 function renderTiles() {
+  if (page === "stations") return;
   const issuesOnly = els.issuesOnly.checked;
   const routes = Object.keys(statuses).filter((r) => !issuesOnly || statuses[r].status !== GOOD_SERVICE);
   if (!routes.length && Object.keys(statuses).length) {
@@ -221,7 +194,7 @@ function renderTiles() {
       tile.dataset.key = `tile-${route}`;
       if (selected && selected.route === route) tile.classList.add("selected");
       tile.append(bullet(route, "big"), el("span", "tile-status", statusWord(info.status)));
-      if (isFavorite(route)) tile.append(el("span", "tile-saved", "★"));
+      if (isFavorite(route)) { const saved = el("span", "tile-saved"); saved.append(icon("star")); tile.append(saved); }
       tile.setAttribute("aria-label", `${longName(route)}: ${statusWord(info.status)}${isFavorite(route) ? ", saved" : ""}`);
       tile.addEventListener("click", () => selectLine(route));
       return tile;
@@ -233,88 +206,63 @@ function renderTiles() {
 
 function alertItem(alert) {
   const item = el("article", `alert ${severity(alert.type || "Delays")}`);
-  item.append(el("h4", null, alert.type || "Service change"));
-  item.append(el("p", "alert-header", alert.header));
+  const heading = el("h4"); heading.append(icon("triangle-alert"), document.createTextNode(alert.type || "Service change")); item.append(heading);
+  const header = el("p", "alert-header"); header.append(routeText(alert.header)); item.append(header);
   const start = when(alert.start);
   const end = when(alert.end);
   if (start || end) item.append(el("p", "meta", `${start || "Now"} to ${end || "further notice"}`));
   if (alert.description) {
     const more = el("details");
-    more.append(el("summary", null, "More details"), el("p", "alert-more", alert.description));
+    const description = el("p", "alert-more"); description.append(routeText(alert.description));
+    more.append(el("summary", null, "More details"), description);
     item.append(more);
   }
   return item;
 }
 
-function outageItem(o) {
-  const item = el("article", `outage${o.accessible_route ? " accessible" : ""}`);
-  item.append(el("h4", null, o.station));
-  item.append(el("p", null, o.serving ? `${o.type}: ${o.serving}` : o.type));
-  const notes = [];
-  if (o.accessible_route) notes.push("Step-free route");
-  if (o.upcoming && o.since) notes.push(`Scheduled to go out ${when(o.since)}`);
-  if (!o.back) notes.push("No return date yet");
-  else if (new Date(o.back) < new Date()) notes.push(`Was due back ${when(o.back)}`);
-  else notes.push(`Back ${when(o.back)}`);
-  item.append(el("p", "meta", notes.join(". ")));
-  return item;
-}
-
-function section(title, items, emptyText) {
-  if (!items.length && !emptyText) return [];
-  return [el("h3", null, title), ...(items.length ? items : [el("p", "empty", emptyText)])];
-}
+function outageItem(o) { return equipmentReport(o, when); }
 
 function saveButton(route) {
-  const saved = isFavorite(route);
-  const btn = el("button", `save${saved ? " on" : ""}`, saved ? "★ Saved" : "☆ Save line");
-  btn.type = "button";
-  btn.dataset.key = "save";
-  btn.setAttribute("aria-pressed", String(saved));
-  if (isPending(route)) btn.setAttribute("aria-busy", "true");
-  btn.addEventListener("click", () => onSave(route));
-  return btn;
+  return saveControl({saved:isFavorite(route), pending:isPending(route), label:"line", key:`save-${route}`, onClick:() => onSave(route)});
 }
-
+function scrollToDetails() {
+  if (window.matchMedia("(max-width: 1023px)").matches) els.details.scrollIntoView({behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth", block:"start"});
+}
+function accessibilityCard(station, route) {
+  const card = el("section", "accessibility-card");
+  const heading = el("h3"); heading.append(icon("accessibility"), document.createTextNode("Accessibility")); card.append(heading);
+  if (station) {
+    card.append(el("h4", null, "Published station accessibility"), el("p", null, accessibilityText(station.accessibility)));
+    if (station.accessibility_notes) card.append(el("p", "meta", station.accessibility_notes));
+  } else card.append(el("p", "meta", "Equipment reports across this line."));
+  if (equipmentWarning) card.append(el("p", "data-warning", equipmentWarning));
+  const reports = station ? stationOutages(outages, station) : outages.filter((o) => o.lines.includes(route));
+  for (const [upcoming, title] of [[false,"Current equipment outages"], [true,"Scheduled equipment outages"]]) {
+    const items = reports.filter((o) => Boolean(o.upcoming) === upcoming);
+    card.append(el("h4", null, title), ...(items.length ? items.map(outageItem) : [el("p", "empty", "No matching outages reported.")]));
+  }
+  card.append(el("p", "meta", "Live equipment reports are separate from published accessibility. No matching report does not guarantee step-free access."));
+  return card;
+}
 function renderDetails() {
   if (!selected) return;
-  const { route, alerts } = selected;
+  if (selected.station) return renderStationDetails();
+  const {route, alerts, warning} = selected;
   const info = statusOf(route);
-
-  const head = el("div", "details-head");
-  const title = el("div");
-  title.append(el("h2", null, longName(route)), el("p", `details-status ${severity(info.status)}`, statusWord(info.status)));
-  head.append(bullet(route, "huge"), title);
+  const head = el("section", "line-summary");
+  head.append(bullet(route,"huge"), el("h2",null,longName(route)), el("p",`details-status ${severity(info.status)}`,statusWord(info.status)));
   if (authOn) head.append(saveButton(route));
-
-  // Broken now first, scheduled work after (the server already puts step-free elevators first).
-  const lineOutages = outages
-    .filter((o) => o.lines.includes(route))
-    .sort((a, b) => Number(a.upcoming) - Number(b.upcoming));
-  const outageItems = lineOutages.slice(0, OUTAGES_SHOWN).map(outageItem);
-  if (lineOutages.length > OUTAGES_SHOWN) {
-    const more = el("details", "more-outages");
-    more.append(el("summary", null, `Show ${lineOutages.length - OUTAGES_SHOWN} more`));
-    lineOutages.slice(OUTAGES_SHOWN).forEach((o) => more.append(outageItem(o)));
-    outageItems.push(more);
-  }
-  const body = [head];
-  if (!alerts) {
-    body.push(el("p", "empty", "Loading alerts…"));
-  } else {
-    body.push(
-      ...section("Happening now", alerts.filter((a) => a.active).map(alertItem), "Trains are running normally."),
-      ...section("Coming up", alerts.filter((a) => !a.active).map(alertItem)),
-    );
-  }
-  body.push(
-    ...section(
-      "Elevators and escalators",
-      outageItems,
-      "Every elevator and escalator on this line is working.",
-    ),
-  );
+  const body = [];
+  const overview = el("div","detail-overview"); overview.append(head,accessibilityCard(null,route)); body.push(overview);
+  if (warning) body.push(el("p","data-warning",warning));
+  if (!alerts) body.push(el("p","empty",selected.error ? "Alert information is unavailable." : "Loading alerts…"));
+  else body.push(alertColumns(alerts,`line-${route}`));
   els.details.replaceChildren(...body);
+}
+function alertColumns(alerts,key) {
+  const columns = el("div","alert-columns");
+  columns.append(alertPreview("Happening now",alerts.filter((a)=>a.active),`${key}-now`,alertItem,"No current alerts reported."),alertPreview("Coming up",alerts.filter((a)=>!a.active),`${key}-upcoming`,alertItem,"No upcoming alerts reported."));
+  return columns;
 }
 
 async function loadLineAlerts(route) {
@@ -322,10 +270,16 @@ async function loadLineAlerts(route) {
     const data = await getJSON(`${ALERTS_URL}?route=${encodeURIComponent(route)}`);
     if (selected && selected.route === route) {
       selected.alerts = data.alerts;
+      selected.warning = data.warning || "";
+      selected.error = false;
       keepFocus(renderDetails);
     }
   } catch (err) {
-    els.details.replaceChildren(el("p", "empty", `Couldn't load alerts for this line (${err.message}).`));
+    if (selected?.route === route) {
+      selected.warning = `Couldn't refresh alerts (${err.message}).`;
+      selected.error = true;
+      keepFocus(renderDetails);
+    }
   }
 }
 
@@ -334,7 +288,7 @@ function selectLine(route) {
   renderTiles();
   renderDetails();
   loadLineAlerts(route);
-  if (window.matchMedia(MOBILE_QUERY).matches) els.details.scrollIntoView({ behavior: "smooth" });
+  scrollToDetails();
 }
 
 // ---------- saving lines + alerts when they change ----------
@@ -390,6 +344,7 @@ function renderAll() {
   keepFocus(() => {
     renderHeadline();
     renderMine();
+    renderSavedStations();
     renderProblems();
     renderTiles();
     renderDetails();
@@ -409,13 +364,15 @@ async function loadEverything() {
     statuses = status.routes || {};
     activeAlerts = alerts.alerts || [];
     outages = elevators.outages || [];
+    equipmentWarning = elevators.warning || "";
     const warning = status.warning || elevators.warning;
     els.warning.hidden = !warning;
     els.warning.textContent = warning || "";
     els.updated.textContent = `Updated ${new Date().toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })}.`;
     announceChanges();
     renderAll();
-    if (selected) loadLineAlerts(selected.route);
+    if (selected?.station) loadStationAlerts(selected.station);
+    else if (selected) loadLineAlerts(selected.route);
   } catch (err) {
     els.warning.hidden = false;
     els.warning.textContent = `Couldn't load service status (${err.message}). Trying again in a minute.`;
@@ -425,6 +382,7 @@ async function loadEverything() {
 }
 
 async function onUserChange(newUser) {
+  const current = ++authGeneration;
   authOn = true; // Firebase loaded, so saving lines is possible
   user = newUser;
   els.account.hidden = false;
@@ -440,7 +398,12 @@ async function onUserChange(newUser) {
   } catch (err) {
     toast(`Couldn't load your saved lines: ${err.message}`);
   }
-  if (user && saveAfterSignIn && !isFavorite(saveAfterSignIn)) onSave(saveAfterSignIn);
+  if (current !== authGeneration) return;
+  if (user && saveAfterSignIn) {
+    const target = saveAfterSignIn;
+    if (typeof target === "object") { if (!isStationSaved(target.id)) onSaveStation(target); }
+    else if (!isFavorite(target)) onSave(target);
+  }
   saveAfterSignIn = null;
   renderAll();
 }
@@ -452,6 +415,7 @@ els.issuesOnly.addEventListener("change", () => {
   try { localStorage.setItem(ISSUES_ONLY_KEY, els.issuesOnly.checked ? "1" : "0"); } catch (_) {}
   keepFocus(renderTiles);
 });
+els.refresh.prepend(icon("refresh-cw"));
 els.refresh.addEventListener("click", loadEverything);
 els.notify.addEventListener("click", onNotifyClick);
 els.signInBtn.addEventListener("click", () => signIn().catch((err) => toast(err.message)));
@@ -461,3 +425,107 @@ onFavoritesChange(renderAll);
 loadEverything();
 setInterval(loadEverything, REFRESH_MS);
 startAuth(onUserChange); // sign-in is optional: everything above works without it
+
+// ---------- station browsing ----------
+function stationRow(station, keyPrefix) {
+  const button = el("button", "station-result");
+  button.type = "button";
+  button.dataset.key = `${keyPrefix}-${station.id}`;
+  button.append(el("strong", null, station.name), el("span", "meta", station.borough));
+  const lines = el("span", "station-lines");
+  station.lines.forEach((r) => lines.append(bullet(r)));
+  button.append(lines);
+  button.addEventListener("click", () => selectStation(station));
+  return button;
+}
+function renderStationSearch() {
+  const results = searchStations(stations, $("station-query").value, $("station-line").value);
+  $("station-message").textContent = results.length ? `${results.length} station${results.length === 1 ? "" : "s"}.${results.length > 20 ? " Showing 20; refine your search for more." : ""}` : "No stations match your search.";
+  $("station-results").replaceChildren(...results.slice(0, 20).map((s) => stationRow(s, "search")));
+}
+async function loadStations() {
+  $("station-retry").hidden = true;
+  $("station-message").textContent = "Loading stations…";
+  try {
+    const data = await getJSON("/api/stations/");
+    stations = data.stations;
+    catalogReady = true;
+    const routes = [...new Set(stations.flatMap((s) => s.lines))].sort();
+    $("station-line").replaceChildren(new Option("All lines", ""), ...routes.map((r) => new Option(longName(r), r)));
+    renderStationSearch();
+    renderSavedStations();
+  } catch (err) {
+    $("station-message").textContent = `Couldn't load stations (${err.message}).`;
+    $("station-retry").hidden = false;
+  }
+}
+function renderSavedStations() {
+  $("saved-stations").hidden = page !== "stations" || !user;
+  const rows = savedStations().map((favorite) => {
+    const station = stations.find((s) => s.id === favorite.station_id);
+    const row = el("div", "saved-station-row");
+    row.append(station ? stationRow(station, "saved") : el("span", null, favorite.name));
+    const remove = el("button", "text-btn", "Remove");
+    remove.type = "button";
+    remove.dataset.key = `remove-station-${favorite.id}`;
+    remove.setAttribute("aria-label", `Remove ${favorite.name} from saved stations`);
+    remove.disabled = stationPending(favorite.station_id || favorite.id);
+    remove.addEventListener("click", () => toggleStation(favorite.station_id, favorite.id).catch((err) => toast(err.message)));
+    row.append(remove);
+    return row;
+  });
+  $("saved-station-list").replaceChildren(...(rows.length ? rows : [el("p", "empty", "Find a station and press Save station to keep it here.")]));
+}
+function onSaveStation(station) {
+  if (!user) {
+    saveAfterSignIn = station;
+    signIn().then((ok) => { if (!ok) saveAfterSignIn = null; }).catch((err) => { saveAfterSignIn = null; toast(err.message); });
+    return;
+  }
+  toggleStation(station.id).catch((err) => toast(`Couldn't update your stations: ${err.message}`));
+}
+function stationOverview(station) {
+  const head = el("section", "station-detail-head");
+  head.append(el("h2", null, station.name), el("p", "meta", station.borough));
+  const lines = el("div", "station-lines");
+  station.lines.forEach((r) => { const link = el("a", "text-btn line-link"); link.href=`/lines/?route=${encodeURIComponent(r)}`; link.dataset.key=`station-line-${r}`; link.append(bullet(r)); link.setAttribute("aria-label",`View ${longName(r)} status`); lines.append(link); });
+  head.append(lines);
+  if (authOn) head.append(saveControl({saved:isStationSaved(station.id),pending:stationPending(station.id),label:"station",key:`save-station-${station.id}`,onClick:()=>onSaveStation(station)}));
+  return head;
+}
+function renderStationDetails() {
+  const {station,alerts,warning} = selected;
+  const overview = el("div","detail-overview"); overview.append(stationOverview(station),accessibilityCard(station));
+  const body = [overview,el("h3",null,"Alerts affecting this station’s lines"),el("p","meta","These are line-wide alerts and may not affect this specific station.")];
+  if (warning) body.push(el("p","data-warning",warning));
+  if (!alerts) body.push(el("p","empty",selected.error ? "Alert information is unavailable." : "Loading alerts…"));
+  else body.push(alertColumns(alerts,`station-${station.id}`));
+  els.details.replaceChildren(...body);
+}
+async function loadStationAlerts(station) {
+  const target = selected;
+  try {
+    const data = await getJSON(ALERTS_URL);
+    if (selected !== target) return;
+    selected.alerts = stationAlerts(data.alerts, station);
+    selected.warning = data.warning || "";
+    selected.error = false;
+  } catch (err) {
+    if (selected !== target) return;
+    selected.warning = `Couldn't refresh alerts (${err.message}). ${selected.alerts ? "Showing previously loaded alerts." : "Alert information is unavailable."}`;
+    selected.error = true;
+  }
+  keepFocus(renderDetails);
+}
+function selectStation(station) {
+  selected = { station, alerts: null, warning: "" };
+  renderTiles(); renderDetails(); loadStationAlerts(station);
+  scrollToDetails();
+}
+$("station-query").addEventListener("input", () => { if (catalogReady) renderStationSearch(); });
+$("station-line").addEventListener("change", () => { if (catalogReady) renderStationSearch(); });
+$("station-retry").addEventListener("click", loadStations);
+if (page === "stations") loadStations();
+
+const initialRoute = new URLSearchParams(window.location.search).get("route");
+if (page === "lines" && (Object.hasOwn(LINE_COLORS, initialRoute) || ["6X", "7X"].includes(initialRoute))) selectLine(initialRoute);

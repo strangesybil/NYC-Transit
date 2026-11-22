@@ -8,6 +8,8 @@ const ROUTE_KIND = "route";
 const favoriteIds = new Map(); // route -> favorite id on the server
 const pending = new Set(); // routes with a save/remove in flight
 const listeners = new Set();
+let generation = 0;
+let stationFavorites = [];
 
 function notify() {
   listeners.forEach((fn) => fn());
@@ -32,7 +34,9 @@ export function favoriteRoutes() {
 }
 
 async function api(path, options = {}) {
+  const current = generation;
   const token = await getIdToken();
+  if (current !== generation) throw new Error("Account changed. Please try again.");
   if (!token) throw new Error("Sign in to save lines.");
   const res = await fetch(path, {
     ...options,
@@ -50,9 +54,15 @@ async function api(path, options = {}) {
 
 /** Load the signed-in user's favorites (or clear them when signed out). */
 export async function loadFavorites(signedIn) {
+  const current = ++generation;
+  stationFavorites = [];
+  pending.clear();
   favoriteIds.clear();
+  notify();
   if (signedIn) {
     const data = await api(FAVORITES_URL);
+    if (current !== generation) return;
+    stationFavorites = data.favorites.filter((f) => f.kind === "station");
     data.favorites
       .filter((f) => f.kind === ROUTE_KIND)
       .forEach((f) => favoriteIds.set(f.name, f.id));
@@ -66,6 +76,7 @@ export async function loadFavorites(signedIn) {
  */
 export async function toggleFavorite(route) {
   if (pending.has(route)) return;
+  const current = generation;
   const wasSaved = favoriteIds.has(route);
   const oldId = favoriteIds.get(route);
   pending.add(route);
@@ -81,14 +92,37 @@ export async function toggleFavorite(route) {
         method: "POST",
         body: JSON.stringify({ kind: ROUTE_KIND, name: route }),
       });
-      favoriteIds.set(route, data.favorite.id);
+      if (current === generation) favoriteIds.set(route, data.favorite.id);
     }
   } catch (err) {
+    if (current !== generation) return;
     if (wasSaved) favoriteIds.set(route, oldId);
     else favoriteIds.delete(route);
     throw err;
   } finally {
-    pending.delete(route);
-    notify();
+    if (current === generation) { pending.delete(route); notify(); }
+  }
+}
+
+export function savedStations() { return stationFavorites; }
+export function isStationSaved(id) { return stationFavorites.some((f) => f.station_id === id); }
+export function stationPending(id) { return pending.has(`station-${id}`); }
+export async function toggleStation(id, legacyId = null) {
+  const key = `station-${id || legacyId}`;
+  if (pending.has(key)) return;
+  const current = generation;
+  const existing = stationFavorites.find((f) => legacyId ? f.id === legacyId : f.station_id === id);
+  pending.add(key);
+  notify();
+  try {
+    if (existing) {
+      await api(`${FAVORITES_URL}${existing.id}/`, { method: "DELETE" });
+      if (current === generation) stationFavorites = stationFavorites.filter((f) => f.id !== existing.id);
+    } else {
+      const data = await api(FAVORITES_URL, {method: "POST", body: JSON.stringify({kind: "station", station_id: id})});
+      if (current === generation) stationFavorites.push(data.favorite);
+    }
+  } finally {
+    if (current === generation) { pending.delete(key); notify(); }
   }
 }

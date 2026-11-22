@@ -1,8 +1,8 @@
 # Firebase sign-in setup (Task 6)
 
-Sign-in, saved lines and line alerts only switch on once the Firebase project id is set in
-`nyctransit/settings.py`. Until then everything else works (status, alerts, elevator
-outages), just without the Sign in button and Save line.
+The repository already contains Firebase web configuration. Sign-in and saving lines/stations work at `http://localhost:8000` when that hostname is authorized in the Firebase project. The setup steps below are for a new Firebase project or deployment. If `projectId` is empty, public status pages still work but account features are hidden.
+
+See [local setup](../README.md), [station data and favorites](task-6-stations.md), and [frontend components](frontend-components.md).
 
 ## 1. Create the Firebase project (one time, ~5 min)
 
@@ -12,7 +12,7 @@ outages), just without the Sign in button and Save line.
    (pick a support email, save).
 3. **Authentication → Settings → Authorized domains → Add domain**, and add the live
    site's domain, e.g. `nyctransit-env.eba-xxxxxxx.us-east-2.elasticbeanstalk.com`
-   (no `http://`). `localhost` is already there for local testing.
+   (no `http://`). Add `localhost` for local testing if it is absent, and use http://localhost:8000. The hostname 127.0.0.1 is separate.
 4. **Project settings** (gear icon) → **General** → **Your apps** → click the web
    icon `</>` → nickname `nyc-transit-web` → **Register app** (skip Hosting).
    Firebase shows a `firebaseConfig` object.
@@ -52,12 +52,12 @@ Commit, push, merge to `main`, and the deploy picks it up.
 
 | Method | URL | Body | Result |
 |---|---|---|---|
-| GET | `/api/favorites/` | | `{"favorites": [{"id", "kind", "name", "created_at"}]}` |
+| GET | `/api/favorites/` | | Favorites containing `id`, `kind`, `name`, `station_id` and `created_at` |
 | POST | `/api/favorites/` | `{"kind": "route", "name": "A"}` | 201 created, 200 if already saved |
+| POST | `/api/favorites/` | `{"kind": "station", "station_id": "1"}` | 201 created, 200 if already saved |
 | DELETE | `/api/favorites/<id>/` | | 204 |
 
-`kind` is `"route"` (must be a line we track) or `"station"` (any name, ready for
-the map task). Max 50 per user. Without a valid token: 401. If Firebase isn't
+`kind` is `"route"` (must be a line we track) or `"station"` (prefer a catalog station ID; the server derives its name). Legacy name-only station requests remain supported. `station_id` is null for route and unresolved legacy favorites. Max 50 favorites per user. Without a valid token: 401. If Firebase isn't
 configured on the server: 503.
 
 ## Elevator and escalator outages
@@ -66,5 +66,5 @@ configured on the server: 503.
 service, from the MTA's `nyct_ene.json` feed (no key needed). The server downloads it at
 most every 5 minutes and keeps it in memory (`myapp/elevators.py`). If the MTA is down,
 it keeps showing the last list it got, with a warning. Each outage has `station`,
-`lines`, `type`, `serving`, `accessible_route` (the step-free route for wheelchair
+`lines`, `equipment`, `type`, `serving`, `reason`, `accessible_route` (the step-free route for wheelchair
 users), `since`, `back` and `upcoming`.
