@@ -9,7 +9,7 @@ Use Python 3.12 or newer. From this repository directory:
 ```sh
 python3.12 -m venv venv
 source venv/bin/activate
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-test.txt
 python manage.py migrate
 python manage.py runserver
 ```
@@ -49,7 +49,8 @@ Node dependencies are test-only. There is no production frontend build step. The
 - [Firebase setup and APIs](docs/task-6-setup.md)
 - [Station catalog, favorites API and migration](docs/task-6-stations.md)
 - [Frontend components, icons and responsive layout](docs/frontend-components.md)
+- [CI checks, merge protection and AWS deployment](docs/ci-and-deployment.md)
 
 ## Deployment
 
-Pushes to `main` trigger the existing GitHub Actions deployment to AWS Elastic Beanstalk. Its container commands apply migrations and collect static files. Include migration `0003`, the bundled station JSON, and the licensed Lucide SVGs in the deployment. No npm installation or station catalog refresh is required on the server. AWS credentials belong in the deployment's GitHub secrets; Firebase authorized domains must include the deployed hostname.
+Every branch push and PR into `main` runs GitHub Actions tests. Pushes to `main` deploy to AWS Elastic Beanstalk only after the Tests job passes. To block merges as well, a repository administrator must make **Tests** a required check for `main`; see the CI guide. Its container commands apply migrations and collect static files. Include migration `0003`, the bundled station JSON, and the licensed Lucide SVGs in the deployment. No npm installation or station catalog refresh is required on the server. AWS credentials belong in the deployment's GitHub secrets; Firebase authorized domains must include the deployed hostname.
