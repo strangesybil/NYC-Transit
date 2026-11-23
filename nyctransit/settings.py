@@ -74,10 +74,14 @@ WSGI_APPLICATION = 'nyctransit.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.1/ref/settings/#databases
 
+# On Elastic Beanstalk the database lives outside the app folder (SQLITE_PATH is set in
+# .ebextensions/02_django_setup.config). The app folder is replaced on every deploy and
+# isn't writable by the user the site runs as, which caused "attempt to write a readonly
+# database" and wiped saved lines on each deploy. Locally it's still db.sqlite3 here.
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': os.environ.get('SQLITE_PATH', BASE_DIR / 'db.sqlite3'),
     }
 }
 
