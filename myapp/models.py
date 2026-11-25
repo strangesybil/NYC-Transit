@@ -80,8 +80,13 @@ class Favorite(models.Model):
     name = models.CharField(max_length=100)  # "A" or "Times Sq-42 St"
     created_at = models.DateTimeField(auto_now_add=True)
 
+    station_id = models.CharField(max_length=20, null=True, blank=True)
+
     class Meta:
-        unique_together = ("user", "kind", "name")
+        constraints = [
+            models.UniqueConstraint(fields=["user", "kind", "name"], condition=models.Q(station_id__isnull=True), name="favorite_legacy_unique"),
+            models.UniqueConstraint(fields=["user", "station_id"], condition=models.Q(station_id__isnull=False), name="favorite_station_unique"),
+        ]
 
     def __str__(self):
         return f"{self.user} - {self.kind}: {self.name}"

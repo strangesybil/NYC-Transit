@@ -15,6 +15,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_http_methods
 
 from . import firebase_auth
+from .stations import station_by_id, resolve_name
 from .models import Favorite
 from .mta import SUBWAY_ROUTES
 
@@ -72,6 +73,7 @@ def _serialize(favorite):
         "kind": favorite.kind,
         "name": favorite.name,
         "created_at": favorite.created_at,
+        "station_id": favorite.station_id,
     }
 
 
@@ -81,13 +83,23 @@ def _validate(body):
     name = str(body.get("name", "")).strip()
     if kind not in (Favorite.ROUTE, Favorite.STATION):
         raise ValueError('kind must be "route" or "station"')
+    station_id = None
+    if kind == Favorite.STATION:
+        if "station_id" in body:
+            station = station_by_id(str(body["station_id"]))
+            if not station:
+                raise ValueError("Unknown station ID")
+        else:
+            station = resolve_name(name)
+        if station:
+            station_id, name = station["id"], station["name"]
     if not name or len(name) > MAX_NAME_LENGTH:
         raise ValueError(f"name must be 1-{MAX_NAME_LENGTH} characters")
     if kind == Favorite.ROUTE:
         name = name.upper()
         if name not in SUBWAY_ROUTES:
             raise ValueError(f'"{name}" is not a subway line we track')
-    return kind, name
+    return kind, name, station_id
 
 
 @firebase_login_required
@@ -102,19 +114,31 @@ def favorites_api(request):
         body = json.loads(request.body or b"{}")
         if not isinstance(body, dict):
             raise ValueError("send a JSON object")
-        kind, name = _validate(body)
+        kind, name, station_id = _validate(body)
     except json.JSONDecodeError:
         return _error("Request body must be JSON.", 400)
     except ValueError as exc:
         return _error(str(exc), 400)
 
-    existing = user.favorites.filter(kind=kind, name=name).first()
+    if station_id:
+        existing = user.favorites.filter(kind=kind, station_id=station_id).first()
+        # Upgrade a legacy favorite only when the name identifies one station.
+        if not existing and resolve_name(name):
+            existing = user.favorites.filter(kind=kind, name=name, station_id__isnull=True).first()
+            if existing:
+                existing.station_id = station_id
+                existing.save(update_fields=["station_id"])
+    else:
+        existing = user.favorites.filter(kind=kind, name=name, station_id__isnull=True).first()
     if existing:  # saving twice is fine: just return what's there
         return JsonResponse({"favorite": _serialize(existing), "created": False})
     if user.favorites.count() >= MAX_FAVORITES_PER_USER:
         return _error(f"You can save up to {MAX_FAVORITES_PER_USER} favorites.", 400)
-    favorite = Favorite.objects.create(user=user, kind=kind, name=name)
-    return JsonResponse({"favorite": _serialize(favorite), "created": True}, status=201)
+    lookup = {"user": user, "kind": kind, "station_id": station_id}
+    if not station_id:
+        lookup["name"] = name
+    favorite, created = Favorite.objects.get_or_create(**lookup, defaults={"name": name})
+    return JsonResponse({"favorite": _serialize(favorite), "created": created}, status=201 if created else 200)
 
 
 @firebase_login_required

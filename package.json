@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "linkedom": "0.18.12"
+  },
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test myapp/static/myapp/*.test.mjs"
+  }
+}

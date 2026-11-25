@@ -1,0 +1,4 @@
+-r requirements.txt
+
+# Tests sign real Firebase tokens using throwaway RSA keys.
+cryptography==50.0.2

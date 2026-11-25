@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NYC Transit Hub</title>
+  <title>{% if page == "stations" %}Station Status{% else %}Line Status{% endif %} · NYC Transit Hub</title>
   <meta name="description" content="Live NYC subway service status, planned work, and elevator outages.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&display=swap">
   <link rel="stylesheet" href="{% static 'myapp/dashboard.css' %}">
 </head>
-<body>
+<body data-page="{{ page|default:'lines' }}">
   <header class="sign">
-    <a class="sign-name" href="/">NYC Transit Hub</a>
+    <a class="sign-name" href="/lines/">NYC Transit Hub</a>
     <div id="account" class="account" hidden>
       <button id="sign-in" class="sign-in" type="button">
         <svg viewBox="0 0 48 48" aria-hidden="true" width="16" height="16">
@@ -31,12 +31,17 @@
     </div>
   </header>
 
+  <nav class="page-nav" aria-label="Transit status pages">
+    <a href="/lines/" {% if page != "stations" %}aria-current="page"{% endif %}>Line Status</a>
+    <a href="/stations/" {% if page == "stations" %}aria-current="page"{% endif %}>Station Status</a>
+  </nav>
   <p id="warning" class="warning" role="status" hidden></p>
 
   <main class="layout">
     <div class="board">
       <section class="now" aria-live="polite">
-        <h1 id="headline" class="headline">Checking the subway…</h1>
+        <h1 id="headline" class="headline">{% if page == "stations" %}Station Status{% else %}Checking the subway…{% endif %}</h1>
+        {% if page == "stations" %}<p class="page-description">Find your station, check accessibility, and see alerts for its lines.</p>{% endif %}
         <p class="refreshed">
           <span id="updated"></span>
           <button id="refresh" class="text-btn" type="button">Refresh</button>
@@ -51,23 +56,42 @@
         <div id="mine-list" class="mine-list"></div>
       </section>
 
+      <section id="saved-stations" aria-labelledby="saved-stations-title" hidden>
+        <h2 id="saved-stations-title">Your stations</h2>
+        <div id="saved-station-list" class="station-list"></div>
+      </section>
+
       <section id="problems" class="problems" aria-labelledby="problems-title" hidden>
         <h2 id="problems-title">What's wrong right now</h2>
         <ul id="problem-list" class="problem-list"></ul>
       </section>
 
-      <section aria-labelledby="all-title">
+      <section class="station-search" aria-labelledby="station-title" {% if page != "stations" %}hidden{% endif %}>
+        <h2 id="station-title">Find a station</h2>
+        <div class="station-controls">
+          <label for="station-query">Station name
+            <input id="station-query" type="search" placeholder="Try Times Sq or Atlantic" autocomplete="off">
+          </label>
+          <label for="station-line">Line
+            <select id="station-line"><option value="">All lines</option></select>
+          </label>
+        </div>
+        <p id="station-message" class="meta" role="status">Loading stations…</p>
+        <button id="station-retry" type="button" class="text-btn" hidden>Retry station catalog</button>
+        <div id="station-results" class="station-list"></div>
+      </section>
+
+    </div>
+    <aside id="details" class="details" aria-live="polite">
+      <p class="details-hint">{% if page == "stations" %}Find a station to see its accessibility and service highlights.{% else %}Pick a line to see service alerts and equipment reports.{% endif %}</p>
+    </aside>
+      <section class="line-grid" aria-labelledby="all-title" {% if page == "stations" %}hidden{% endif %}>
         <div class="section-head">
           <h2 id="all-title">Every line</h2>
           <label class="filter"><input type="checkbox" id="issues-only"> Only lines with problems</label>
         </div>
         <div id="tiles" class="tiles"></div>
       </section>
-    </div>
-
-    <aside id="details" class="details" aria-live="polite">
-      <p class="details-hint">Pick a line to see what's going on, upcoming planned work, and broken elevators or escalators.</p>
-    </aside>
   </main>
 
   <footer class="footer">

@@ -1,0 +1,8171 @@
+{
+  "source": "https://data.ny.gov/resource/39hk-dx4f.json?$limit=1000",
+  "retrieved_at": "2026-11-22",
+  "stations": [
+    {
+      "id": "119",
+      "name": "1 Av",
+      "borough": "Manhattan",
+      "lines": [
+        "L"
+      ],
+      "gtfs_stop_ids": [
+        "L06"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "1 Av"
+      ]
+    },
+    {
+      "id": "156",
+      "name": "103 St",
+      "borough": "Manhattan",
+      "lines": [
+        "C",
+        "B"
+      ],
+      "gtfs_stop_ids": [
+        "A18"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "103 St"
+      ]
+    },
+    {
+      "id": "309",
+      "name": "103 St",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "119"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "103 St"
+      ]
+    },
+    {
+      "id": "395",
+      "name": "103 St",
+      "borough": "Manhattan",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "624"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "103 St"
+      ]
+    },
+    {
+      "id": "450",
+      "name": "103 St-Corona Plaza",
+      "borough": "Queens",
+      "lines": [
+        "7"
+      ],
+      "gtfs_stop_ids": [
+        "706"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "103 St-Corona Plaza"
+      ]
+    },
+    {
+      "id": "193",
+      "name": "104 St",
+      "borough": "Queens",
+      "lines": [
+        "A"
+      ],
+      "gtfs_stop_ids": [
+        "A63"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "104 St"
+      ]
+    },
+    {
+      "id": "82",
+      "name": "104 St",
+      "borough": "Queens",
+      "lines": [
+        "J",
+        "Z"
+      ],
+      "gtfs_stop_ids": [
+        "J14"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "104 St"
+      ]
+    },
+    {
+      "id": "394",
+      "name": "110 St",
+      "borough": "Manhattan",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "623"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "110 St"
+      ]
+    },
+    {
+      "id": "441",
+      "name": "110 St-Malcolm X Plaza",
+      "borough": "Manhattan",
+      "lines": [
+        "2",
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "227"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "110 St-Malcolm X Plaza"
+      ]
+    },
+    {
+      "id": "194",
+      "name": "111 St",
+      "borough": "Queens",
+      "lines": [
+        "A"
+      ],
+      "gtfs_stop_ids": [
+        "A64"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "111 St"
+      ]
+    },
+    {
+      "id": "449",
+      "name": "111 St",
+      "borough": "Queens",
+      "lines": [
+        "7"
+      ],
+      "gtfs_stop_ids": [
+        "705"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "111 St"
+      ]
+    },
+    {
+      "id": "81",
+      "name": "111 St",
+      "borough": "Queens",
+      "lines": [
+        "J"
+      ],
+      "gtfs_stop_ids": [
+        "J13"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "111 St"
+      ]
+    },
+    {
+      "id": "154",
+      "name": "116 St",
+      "borough": "Manhattan",
+      "lines": [
+        "C",
+        "B"
+      ],
+      "gtfs_stop_ids": [
+        "A16"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "116 St"
+      ]
+    },
+    {
+      "id": "393",
+      "name": "116 St",
+      "borough": "Manhattan",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "622"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "116 St"
+      ]
+    },
+    {
+      "id": "440",
+      "name": "116 St",
+      "borough": "Manhattan",
+      "lines": [
+        "2",
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "226"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "116 St"
+      ]
+    },
+    {
+      "id": "307",
+      "name": "116 St-Columbia University",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "117"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "116 St-Columbia University"
+      ]
+    },
+    {
+      "id": "80",
+      "name": "121 St",
+      "borough": "Queens",
+      "lines": [
+        "J",
+        "Z"
+      ],
+      "gtfs_stop_ids": [
+        "J12"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "121 St"
+      ]
+    },
+    {
+      "id": "153",
+      "name": "125 St",
+      "borough": "Manhattan",
+      "lines": [
+        "A",
+        "C",
+        "B",
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "A15"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "125 St"
+      ]
+    },
+    {
+      "id": "306",
+      "name": "125 St",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "116"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "125 St"
+      ]
+    },
+    {
+      "id": "392",
+      "name": "125 St",
+      "borough": "Manhattan",
+      "lines": [
+        "4",
+        "5",
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "621"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "125 St"
+      ]
+    },
+    {
+      "id": "439",
+      "name": "125 St",
+      "borough": "Manhattan",
+      "lines": [
+        "2",
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "225"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "125 St"
+      ]
+    },
+    {
+      "id": "152",
+      "name": "135 St",
+      "borough": "Manhattan",
+      "lines": [
+        "C",
+        "B"
+      ],
+      "gtfs_stop_ids": [
+        "A14"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "135 St"
+      ]
+    },
+    {
+      "id": "438",
+      "name": "135 St",
+      "borough": "Manhattan",
+      "lines": [
+        "2",
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "224"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "135 St"
+      ]
+    },
+    {
+      "id": "305",
+      "name": "137 St-City College",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "115"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "137 St-City College"
+      ]
+    },
+    {
+      "id": "391",
+      "name": "138 St-Grand Concourse",
+      "borough": "Bronx",
+      "lines": [
+        "4",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "416"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "138 St-Grand Concourse"
+      ]
+    },
+    {
+      "id": "166",
+      "name": "14 St",
+      "borough": "Manhattan",
+      "lines": [
+        "A",
+        "C",
+        "E"
+      ],
+      "gtfs_stop_ids": [
+        "A31"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "14 St"
+      ]
+    },
+    {
+      "id": "229",
+      "name": "14 St",
+      "borough": "Manhattan",
+      "lines": [
+        "F",
+        "M"
+      ],
+      "gtfs_stop_ids": [
+        "D19"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "14 St"
+      ]
+    },
+    {
+      "id": "322",
+      "name": "14 St",
+      "borough": "Manhattan",
+      "lines": [
+        "1",
+        "2",
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "132"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "14 St"
+      ]
+    },
+    {
+      "id": "117",
+      "name": "14 St-Union Sq",
+      "borough": "Manhattan",
+      "lines": [
+        "L"
+      ],
+      "gtfs_stop_ids": [
+        "L03"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "14 St-Union Sq"
+      ]
+    },
+    {
+      "id": "15",
+      "name": "14 St-Union Sq",
+      "borough": "Manhattan",
+      "lines": [
+        "N",
+        "Q",
+        "R",
+        "W"
+      ],
+      "gtfs_stop_ids": [
+        "R20"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "14 St-Union Sq"
+      ]
+    },
+    {
+      "id": "406",
+      "name": "14 St-Union Sq",
+      "borough": "Manhattan",
+      "lines": [
+        "4",
+        "5",
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "635"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "14 St-Union Sq"
+      ]
+    },
+    {
+      "id": "151",
+      "name": "145 St",
+      "borough": "Manhattan",
+      "lines": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "A12",
+        "D13"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "145 St"
+      ]
+    },
+    {
+      "id": "304",
+      "name": "145 St",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "114"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "145 St"
+      ]
+    },
+    {
+      "id": "437",
+      "name": "145 St",
+      "borough": "Manhattan",
+      "lines": [
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "302"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "145 St"
+      ]
+    },
+    {
+      "id": "390",
+      "name": "149 St-Hostos",
+      "borough": "Bronx",
+      "lines": [
+        "4"
+      ],
+      "gtfs_stop_ids": [
+        "415"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "149 St-Hostos"
+      ]
+    },
+    {
+      "id": "435",
+      "name": "149 St-Hostos",
+      "borough": "Bronx",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "222"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "149 St-Hostos"
+      ]
+    },
+    {
+      "id": "241",
+      "name": "15 St-Prospect Park",
+      "borough": "Brooklyn",
+      "lines": [
+        "F",
+        "G"
+      ],
+      "gtfs_stop_ids": [
+        "F25"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "15 St-Prospect Park"
+      ]
+    },
+    {
+      "id": "150",
+      "name": "155 St",
+      "borough": "Manhattan",
+      "lines": [
+        "C"
+      ],
+      "gtfs_stop_ids": [
+        "A11"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "155 St"
+      ]
+    },
+    {
+      "id": "220",
+      "name": "155 St",
+      "borough": "Manhattan",
+      "lines": [
+        "B",
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "D12"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "155 St"
+      ]
+    },
+    {
+      "id": "303",
+      "name": "157 St",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "113"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "157 St"
+      ]
+    },
+    {
+      "id": "219",
+      "name": "161 St-Yankee Stadium",
+      "borough": "Bronx",
+      "lines": [
+        "B",
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "D11"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "161 St-Yankee Stadium"
+      ]
+    },
+    {
+      "id": "389",
+      "name": "161 St-Yankee Stadium",
+      "borough": "Bronx",
+      "lines": [
+        "4"
+      ],
+      "gtfs_stop_ids": [
+        "414"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "161 St-Yankee Stadium"
+      ]
+    },
+    {
+      "id": "149",
+      "name": "163 St-Amsterdam Av",
+      "borough": "Manhattan",
+      "lines": [
+        "C"
+      ],
+      "gtfs_stop_ids": [
+        "A10"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "163 St-Amsterdam Av"
+      ]
+    },
+    {
+      "id": "218",
+      "name": "167 St",
+      "borough": "Bronx",
+      "lines": [
+        "B",
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "D10"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "167 St"
+      ]
+    },
+    {
+      "id": "388",
+      "name": "167 St",
+      "borough": "Bronx",
+      "lines": [
+        "4"
+      ],
+      "gtfs_stop_ids": [
+        "413"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "167 St"
+      ]
+    },
+    {
+      "id": "148",
+      "name": "168 St",
+      "borough": "Manhattan",
+      "lines": [
+        "A",
+        "C"
+      ],
+      "gtfs_stop_ids": [
+        "A09"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "168 St"
+      ]
+    },
+    {
+      "id": "302",
+      "name": "168 St-Washington Hts",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "112"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "168 St-Washington Hts"
+      ]
+    },
+    {
+      "id": "255",
+      "name": "169 St",
+      "borough": "Queens",
+      "lines": [
+        "F"
+      ],
+      "gtfs_stop_ids": [
+        "F02"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "169 St"
+      ]
+    },
+    {
+      "id": "217",
+      "name": "170 St",
+      "borough": "Bronx",
+      "lines": [
+        "B",
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "D09"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "170 St"
+      ]
+    },
+    {
+      "id": "387",
+      "name": "170 St",
+      "borough": "Bronx",
+      "lines": [
+        "4"
+      ],
+      "gtfs_stop_ids": [
+        "412"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "170 St"
+      ]
+    },
+    {
+      "id": "428",
+      "name": "174 St",
+      "borough": "Bronx",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "215"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "174 St"
+      ]
+    },
+    {
+      "id": "216",
+      "name": "174-175 Sts",
+      "borough": "Bronx",
+      "lines": [
+        "B",
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "D08"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "174-175 Sts"
+      ]
+    },
+    {
+      "id": "147",
+      "name": "175 St",
+      "borough": "Manhattan",
+      "lines": [
+        "A"
+      ],
+      "gtfs_stop_ids": [
+        "A07"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "175 St"
+      ]
+    },
+    {
+      "id": "385",
+      "name": "176 St",
+      "borough": "Bronx",
+      "lines": [
+        "4"
+      ],
+      "gtfs_stop_ids": [
+        "410"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "176 St"
+      ]
+    },
+    {
+      "id": "245",
+      "name": "18 Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "F"
+      ],
+      "gtfs_stop_ids": [
+        "F30"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "18 Av"
+      ]
+    },
+    {
+      "id": "66",
+      "name": "18 Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "B19"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "18 Av"
+      ]
+    },
+    {
+      "id": "74",
+      "name": "18 Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "N"
+      ],
+      "gtfs_stop_ids": [
+        "N05"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "18 Av"
+      ]
+    },
+    {
+      "id": "321",
+      "name": "18 St",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "131"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "18 St"
+      ]
+    },
+    {
+      "id": "146",
+      "name": "181 St",
+      "borough": "Manhattan",
+      "lines": [
+        "A"
+      ],
+      "gtfs_stop_ids": [
+        "A06"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "181 St"
+      ]
+    },
+    {
+      "id": "301",
+      "name": "181 St",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "111"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "181 St"
+      ]
+    },
+    {
+      "id": "214",
+      "name": "182-183 Sts",
+      "borough": "Bronx",
+      "lines": [
+        "B",
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "D06"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "182-183 Sts"
+      ]
+    },
+    {
+      "id": "383",
+      "name": "183 St",
+      "borough": "Bronx",
+      "lines": [
+        "4"
+      ],
+      "gtfs_stop_ids": [
+        "408"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "183 St"
+      ]
+    },
+    {
+      "id": "145",
+      "name": "190 St",
+      "borough": "Manhattan",
+      "lines": [
+        "A"
+      ],
+      "gtfs_stop_ids": [
+        "A05"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "190 St"
+      ]
+    },
+    {
+      "id": "300",
+      "name": "191 St",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "110"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "191 St"
+      ]
+    },
+    {
+      "id": "232",
+      "name": "2 Av",
+      "borough": "Manhattan",
+      "lines": [
+        "F"
+      ],
+      "gtfs_stop_ids": [
+        "F14"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "2 Av"
+      ]
+    },
+    {
+      "id": "67",
+      "name": "20 Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "B20"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "20 Av"
+      ]
+    },
+    {
+      "id": "75",
+      "name": "20 Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "N"
+      ],
+      "gtfs_stop_ids": [
+        "N06"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "20 Av"
+      ]
+    },
+    {
+      "id": "298",
+      "name": "207 St",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "108"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "207 St"
+      ]
+    },
+    {
+      "id": "282",
+      "name": "21 St",
+      "borough": "Queens",
+      "lines": [
+        "G"
+      ],
+      "gtfs_stop_ids": [
+        "G24"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "21 St"
+      ]
+    },
+    {
+      "id": "221",
+      "name": "21 St-Queensbridge",
+      "borough": "Queens",
+      "lines": [
+        "M"
+      ],
+      "gtfs_stop_ids": [
+        "B04"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "21 St-Queensbridge"
+      ]
+    },
+    {
+      "id": "297",
+      "name": "215 St",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "107"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "215 St"
+      ]
+    },
+    {
+      "id": "420",
+      "name": "219 St",
+      "borough": "Bronx",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "207"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "219 St"
+      ]
+    },
+    {
+      "id": "419",
+      "name": "225 St",
+      "borough": "Bronx",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "206"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "225 St"
+      ]
+    },
+    {
+      "id": "14",
+      "name": "23 St",
+      "borough": "Manhattan",
+      "lines": [
+        "R",
+        "W"
+      ],
+      "gtfs_stop_ids": [
+        "R19"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "23 St"
+      ]
+    },
+    {
+      "id": "165",
+      "name": "23 St",
+      "borough": "Manhattan",
+      "lines": [
+        "C",
+        "E"
+      ],
+      "gtfs_stop_ids": [
+        "A30"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "23 St"
+      ]
+    },
+    {
+      "id": "228",
+      "name": "23 St",
+      "borough": "Manhattan",
+      "lines": [
+        "F",
+        "M"
+      ],
+      "gtfs_stop_ids": [
+        "D18"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "23 St"
+      ]
+    },
+    {
+      "id": "320",
+      "name": "23 St",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "130"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "23 St"
+      ]
+    },
+    {
+      "id": "405",
+      "name": "23 St-Baruch College",
+      "borough": "Manhattan",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "634"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "23 St-Baruch College"
+      ]
+    },
+    {
+      "id": "295",
+      "name": "231 St",
+      "borough": "Bronx",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "104"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "231 St"
+      ]
+    },
+    {
+      "id": "418",
+      "name": "233 St",
+      "borough": "Bronx",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "205"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "233 St"
+      ]
+    },
+    {
+      "id": "294",
+      "name": "238 St",
+      "borough": "Bronx",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "103"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "238 St"
+      ]
+    },
+    {
+      "id": "69",
+      "name": "25 Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "B22"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "25 Av"
+      ]
+    },
+    {
+      "id": "31",
+      "name": "25 St",
+      "borough": "Brooklyn",
+      "lines": [
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "R35"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "25 St"
+      ]
+    },
+    {
+      "id": "13",
+      "name": "28 St",
+      "borough": "Manhattan",
+      "lines": [
+        "R",
+        "W"
+      ],
+      "gtfs_stop_ids": [
+        "R18"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "28 St"
+      ]
+    },
+    {
+      "id": "319",
+      "name": "28 St",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "129"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "28 St"
+      ]
+    },
+    {
+      "id": "404",
+      "name": "28 St",
+      "borough": "Manhattan",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "633"
+      ],
+      "accessibility": "Partially ADA accessible",
+      "accessibility_notes": "Downtown only",
+      "outage_names": [
+        "28 St"
+      ]
+    },
+    {
+      "id": "118",
+      "name": "3 Av",
+      "borough": "Manhattan",
+      "lines": [
+        "L"
+      ],
+      "gtfs_stop_ids": [
+        "L05"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "3 Av"
+      ]
+    },
+    {
+      "id": "377",
+      "name": "3 Av-138 St",
+      "borough": "Bronx",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "619"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "3 Av-138 St"
+      ]
+    },
+    {
+      "id": "434",
+      "name": "3 Av-149 St",
+      "borough": "Bronx",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "221"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "3 Av-149 St"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "30 Av",
+      "borough": "Queens",
+      "lines": [
+        "N",
+        "W"
+      ],
+      "gtfs_stop_ids": [
+        "R04"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "30 Av"
+      ]
+    },
+    {
+      "id": "403",
+      "name": "33 St",
+      "borough": "Manhattan",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "632"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "33 St"
+      ]
+    },
+    {
+      "id": "460",
+      "name": "33 St-Rawson St",
+      "borough": "Queens",
+      "lines": [
+        "7"
+      ],
+      "gtfs_stop_ids": [
+        "716"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "33 St-Rawson St"
+      ]
+    },
+    {
+      "id": "12",
+      "name": "34 St-Herald Sq",
+      "borough": "Manhattan",
+      "lines": [
+        "N",
+        "Q",
+        "R",
+        "W"
+      ],
+      "gtfs_stop_ids": [
+        "R17"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "34 St-Herald Sq"
+      ]
+    },
+    {
+      "id": "227",
+      "name": "34 St-Herald Sq",
+      "borough": "Manhattan",
+      "lines": [
+        "B",
+        "D",
+        "F",
+        "M"
+      ],
+      "gtfs_stop_ids": [
+        "D17"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "34 St-Herald Sq"
+      ]
+    },
+    {
+      "id": "471",
+      "name": "34 St-Hudson Yards",
+      "borough": "Manhattan",
+      "lines": [
+        "7"
+      ],
+      "gtfs_stop_ids": [
+        "726"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "34 St-Hudson Yards"
+      ]
+    },
+    {
+      "id": "164",
+      "name": "34 St-Penn Station",
+      "borough": "Manhattan",
+      "lines": [
+        "A",
+        "C",
+        "E"
+      ],
+      "gtfs_stop_ids": [
+        "A28"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "34 St-Penn Station"
+      ]
+    },
+    {
+      "id": "318",
+      "name": "34 St-Penn Station",
+      "borough": "Manhattan",
+      "lines": [
+        "1",
+        "2",
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "128"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "34 St-Penn Station"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "36 Av",
+      "borough": "Queens",
+      "lines": [
+        "N",
+        "W"
+      ],
+      "gtfs_stop_ids": [
+        "R06"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "36 Av"
+      ]
+    },
+    {
+      "id": "32",
+      "name": "36 St",
+      "borough": "Brooklyn",
+      "lines": [
+        "D",
+        "N",
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "R36"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "36 St"
+      ]
+    },
+    {
+      "id": "272",
+      "name": "36 St",
+      "borough": "Queens",
+      "lines": [
+        "M",
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "G20"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "36 St"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "39 Av-Dutch Kills",
+      "borough": "Queens",
+      "lines": [
+        "N",
+        "W"
+      ],
+      "gtfs_stop_ids": [
+        "R08"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "39 Av-Dutch Kills"
+      ]
+    },
+    {
+      "id": "239",
+      "name": "4 Av-9 St",
+      "borough": "Brooklyn",
+      "lines": [
+        "F",
+        "G"
+      ],
+      "gtfs_stop_ids": [
+        "F23"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "4 Av-9 St"
+      ]
+    },
+    {
+      "id": "29",
+      "name": "4 Av-9 St",
+      "borough": "Brooklyn",
+      "lines": [
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "R33"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "4 Av-9 St"
+      ]
+    },
+    {
+      "id": "459",
+      "name": "40 St-Lowery St",
+      "borough": "Queens",
+      "lines": [
+        "7"
+      ],
+      "gtfs_stop_ids": [
+        "715"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "40 St-Lowery St"
+      ]
+    },
+    {
+      "id": "226",
+      "name": "42 St-Bryant Pk",
+      "borough": "Manhattan",
+      "lines": [
+        "B",
+        "D",
+        "F",
+        "M"
+      ],
+      "gtfs_stop_ids": [
+        "D16"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "42 St-Bryant Pk"
+      ]
+    },
+    {
+      "id": "163",
+      "name": "42 St-Port Authority Bus Terminal",
+      "borough": "Manhattan",
+      "lines": [
+        "A",
+        "C",
+        "E"
+      ],
+      "gtfs_stop_ids": [
+        "A27"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "42 St-Port Authority Bus Terminal"
+      ]
+    },
+    {
+      "id": "33",
+      "name": "45 St",
+      "borough": "Brooklyn",
+      "lines": [
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "R39"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "45 St"
+      ]
+    },
+    {
+      "id": "270",
+      "name": "46 St",
+      "borough": "Queens",
+      "lines": [
+        "M",
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "G18"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "46 St"
+      ]
+    },
+    {
+      "id": "458",
+      "name": "46 St-Bliss St",
+      "borough": "Queens",
+      "lines": [
+        "7"
+      ],
+      "gtfs_stop_ids": [
+        "714"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "46 St-Bliss St"
+      ]
+    },
+    {
+      "id": "225",
+      "name": "47-50 Sts-Rockefeller Ctr",
+      "borough": "Manhattan",
+      "lines": [
+        "B",
+        "D",
+        "F",
+        "M"
+      ],
+      "gtfs_stop_ids": [
+        "D15"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "47-50 Sts-Rockefeller Ctr"
+      ]
+    },
+    {
+      "id": "10",
+      "name": "49 St",
+      "borough": "Manhattan",
+      "lines": [
+        "N",
+        "R",
+        "W"
+      ],
+      "gtfs_stop_ids": [
+        "R15"
+      ],
+      "accessibility": "Partially ADA accessible",
+      "accessibility_notes": "Uptown only",
+      "outage_names": [
+        "49 St"
+      ]
+    },
+    {
+      "id": "466",
+      "name": "5 Av",
+      "borough": "Manhattan",
+      "lines": [
+        "7"
+      ],
+      "gtfs_stop_ids": [
+        "724"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "5 Av"
+      ]
+    },
+    {
+      "id": "276",
+      "name": "5 Av/53 St",
+      "borough": "Manhattan",
+      "lines": [
+        "E",
+        "F"
+      ],
+      "gtfs_stop_ids": [
+        "F12"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "5 Av/53 St"
+      ]
+    },
+    {
+      "id": "8",
+      "name": "5 Av/59 St",
+      "borough": "Manhattan",
+      "lines": [
+        "N",
+        "R",
+        "W"
+      ],
+      "gtfs_stop_ids": [
+        "R13"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "5 Av/59 St"
+      ]
+    },
+    {
+      "id": "61",
+      "name": "50 St",
+      "borough": "Brooklyn",
+      "lines": [
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "B14"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "50 St"
+      ]
+    },
+    {
+      "id": "162",
+      "name": "50 St",
+      "borough": "Manhattan",
+      "lines": [
+        "C",
+        "E"
+      ],
+      "gtfs_stop_ids": [
+        "A25"
+      ],
+      "accessibility": "Partially ADA accessible",
+      "accessibility_notes": "Downtown only",
+      "outage_names": [
+        "50 St"
+      ]
+    },
+    {
+      "id": "316",
+      "name": "50 St",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "126"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "50 St"
+      ]
+    },
+    {
+      "id": "401",
+      "name": "51 St",
+      "borough": "Manhattan",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "630"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "51 St"
+      ]
+    },
+    {
+      "id": "457",
+      "name": "52 St",
+      "borough": "Queens",
+      "lines": [
+        "7"
+      ],
+      "gtfs_stop_ids": [
+        "713"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "52 St"
+      ]
+    },
+    {
+      "id": "34",
+      "name": "53 St",
+      "borough": "Brooklyn",
+      "lines": [
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "R40"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "53 St"
+      ]
+    },
+    {
+      "id": "62",
+      "name": "55 St",
+      "borough": "Brooklyn",
+      "lines": [
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "B15"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "55 St"
+      ]
+    },
+    {
+      "id": "224",
+      "name": "57 St",
+      "borough": "Manhattan",
+      "lines": [
+        "M"
+      ],
+      "gtfs_stop_ids": [
+        "B10"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "57 St"
+      ]
+    },
+    {
+      "id": "9",
+      "name": "57 St-7 Av",
+      "borough": "Manhattan",
+      "lines": [
+        "N",
+        "Q",
+        "R",
+        "W"
+      ],
+      "gtfs_stop_ids": [
+        "R14"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "57 St-7 Av"
+      ]
+    },
+    {
+      "id": "35",
+      "name": "59 St",
+      "borough": "Brooklyn",
+      "lines": [
+        "N",
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "R41"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "59 St"
+      ]
+    },
+    {
+      "id": "400",
+      "name": "59 St",
+      "borough": "Manhattan",
+      "lines": [
+        "4",
+        "5",
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "629"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "59 St"
+      ]
+    },
+    {
+      "id": "161",
+      "name": "59 St-Columbus Circle",
+      "borough": "Manhattan",
+      "lines": [
+        "A",
+        "C",
+        "B",
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "A24"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "59 St-Columbus Circle"
+      ]
+    },
+    {
+      "id": "315",
+      "name": "59 St-Columbus Circle",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "125"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "59 St-Columbus Circle"
+      ]
+    },
+    {
+      "id": "116",
+      "name": "6 Av",
+      "borough": "Manhattan",
+      "lines": [
+        "L"
+      ],
+      "gtfs_stop_ids": [
+        "L02"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "6 Av"
+      ]
+    },
+    {
+      "id": "456",
+      "name": "61 St-Woodside",
+      "borough": "Queens",
+      "lines": [
+        "7"
+      ],
+      "gtfs_stop_ids": [
+        "712"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "61 St-Woodside"
+      ]
+    },
+    {
+      "id": "63",
+      "name": "62 St",
+      "borough": "Brooklyn",
+      "lines": [
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "B16"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "62 St"
+      ]
+    },
+    {
+      "id": "263",
+      "name": "63 Dr-Rego Park",
+      "borough": "Queens",
+      "lines": [
+        "M",
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "G10"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "63 Dr-Rego Park"
+      ]
+    },
+    {
+      "id": "268",
+      "name": "65 St",
+      "borough": "Queens",
+      "lines": [
+        "M",
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "G15"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "65 St"
+      ]
+    },
+    {
+      "id": "314",
+      "name": "66 St-Lincoln Center",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "124"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "66 St-Lincoln Center"
+      ]
+    },
+    {
+      "id": "262",
+      "name": "67 Av",
+      "borough": "Queens",
+      "lines": [
+        "M",
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "G09"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "67 Av"
+      ]
+    },
+    {
+      "id": "399",
+      "name": "68 St-Hunter College",
+      "borough": "Manhattan",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "628"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "68 St-Hunter College"
+      ]
+    },
+    {
+      "id": "455",
+      "name": "69 St",
+      "borough": "Queens",
+      "lines": [
+        "7"
+      ],
+      "gtfs_stop_ids": [
+        "711"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "69 St"
+      ]
+    },
+    {
+      "id": "240",
+      "name": "7 Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "F",
+        "G"
+      ],
+      "gtfs_stop_ids": [
+        "F24"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "7 Av"
+      ]
+    },
+    {
+      "id": "41",
+      "name": "7 Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "B",
+        "Q"
+      ],
+      "gtfs_stop_ids": [
+        "D25"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "7 Av"
+      ]
+    },
+    {
+      "id": "277",
+      "name": "7 Av",
+      "borough": "Manhattan",
+      "lines": [
+        "E",
+        "B",
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "D14"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "7 Av"
+      ]
+    },
+    {
+      "id": "64",
+      "name": "71 St",
+      "borough": "Brooklyn",
+      "lines": [
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "B17"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "71 St"
+      ]
+    },
+    {
+      "id": "160",
+      "name": "72 St",
+      "borough": "Manhattan",
+      "lines": [
+        "C",
+        "B"
+      ],
+      "gtfs_stop_ids": [
+        "A22"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "72 St"
+      ]
+    },
+    {
+      "id": "313",
+      "name": "72 St",
+      "borough": "Manhattan",
+      "lines": [
+        "1",
+        "2",
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "123"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "72 St"
+      ]
+    },
+    {
+      "id": "477",
+      "name": "72 St",
+      "borough": "Manhattan",
+      "lines": [
+        "Q"
+      ],
+      "gtfs_stop_ids": [
+        "Q03"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "72 St"
+      ]
+    },
+    {
+      "id": "454",
+      "name": "74 St-Broadway",
+      "borough": "Queens",
+      "lines": [
+        "7"
+      ],
+      "gtfs_stop_ids": [
+        "710"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "74 St-Broadway"
+      ]
+    },
+    {
+      "id": "260",
+      "name": "75 Av",
+      "borough": "Queens",
+      "lines": [
+        "E",
+        "F"
+      ],
+      "gtfs_stop_ids": [
+        "F07"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "75 Av"
+      ]
+    },
+    {
+      "id": "85",
+      "name": "75 St-Elderts Ln",
+      "borough": "Queens",
+      "lines": [
+        "J",
+        "Z"
+      ],
+      "gtfs_stop_ids": [
+        "J17"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "75 St-Elderts Ln"
+      ]
+    },
+    {
+      "id": "37",
+      "name": "77 St",
+      "borough": "Brooklyn",
+      "lines": [
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "R43"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "77 St"
+      ]
+    },
+    {
+      "id": "398",
+      "name": "77 St",
+      "borough": "Manhattan",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "627"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "77 St"
+      ]
+    },
+    {
+      "id": "65",
+      "name": "79 St",
+      "borough": "Brooklyn",
+      "lines": [
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "B18"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "79 St"
+      ]
+    },
+    {
+      "id": "312",
+      "name": "79 St",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "122"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "79 St"
+      ]
+    },
+    {
+      "id": "71",
+      "name": "8 Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "N"
+      ],
+      "gtfs_stop_ids": [
+        "N02"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "8 Av"
+      ]
+    },
+    {
+      "id": "115",
+      "name": "8 Av",
+      "borough": "Manhattan",
+      "lines": [
+        "L"
+      ],
+      "gtfs_stop_ids": [
+        "L01"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "8 Av"
+      ]
+    },
+    {
+      "id": "16",
+      "name": "8 St-NYU",
+      "borough": "Manhattan",
+      "lines": [
+        "R",
+        "W"
+      ],
+      "gtfs_stop_ids": [
+        "R21"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "8 St-NYU"
+      ]
+    },
+    {
+      "id": "190",
+      "name": "80 St",
+      "borough": "Queens",
+      "lines": [
+        "A"
+      ],
+      "gtfs_stop_ids": [
+        "A59"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "80 St"
+      ]
+    },
+    {
+      "id": "159",
+      "name": "81 St-Museum of Natural History",
+      "borough": "Manhattan",
+      "lines": [
+        "C",
+        "B"
+      ],
+      "gtfs_stop_ids": [
+        "A21"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "81 St-Museum of Natural History"
+      ]
+    },
+    {
+      "id": "453",
+      "name": "82 St-Jackson Hts",
+      "borough": "Queens",
+      "lines": [
+        "7"
+      ],
+      "gtfs_stop_ids": [
+        "709"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "82 St-Jackson Hts"
+      ]
+    },
+    {
+      "id": "84",
+      "name": "85 St-Forest Pkwy",
+      "borough": "Queens",
+      "lines": [
+        "J"
+      ],
+      "gtfs_stop_ids": [
+        "J16"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "85 St-Forest Pkwy"
+      ]
+    },
+    {
+      "id": "38",
+      "name": "86 St",
+      "borough": "Brooklyn",
+      "lines": [
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "R44"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "86 St"
+      ]
+    },
+    {
+      "id": "79",
+      "name": "86 St",
+      "borough": "Brooklyn",
+      "lines": [
+        "N"
+      ],
+      "gtfs_stop_ids": [
+        "N10"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "86 St"
+      ]
+    },
+    {
+      "id": "158",
+      "name": "86 St",
+      "borough": "Manhattan",
+      "lines": [
+        "C",
+        "B"
+      ],
+      "gtfs_stop_ids": [
+        "A20"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "86 St"
+      ]
+    },
+    {
+      "id": "311",
+      "name": "86 St",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "121"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "86 St"
+      ]
+    },
+    {
+      "id": "397",
+      "name": "86 St",
+      "borough": "Manhattan",
+      "lines": [
+        "4",
+        "5",
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "626"
+      ],
+      "accessibility": "Partially ADA accessible",
+      "accessibility_notes": "Uptown local only",
+      "outage_names": [
+        "86 St"
+      ]
+    },
+    {
+      "id": "476",
+      "name": "86 St",
+      "borough": "Manhattan",
+      "lines": [
+        "Q"
+      ],
+      "gtfs_stop_ids": [
+        "Q04"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "86 St"
+      ]
+    },
+    {
+      "id": "191",
+      "name": "88 St",
+      "borough": "Queens",
+      "lines": [
+        "A"
+      ],
+      "gtfs_stop_ids": [
+        "A60"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "88 St"
+      ]
+    },
+    {
+      "id": "59",
+      "name": "9 Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "B12"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "9 Av"
+      ]
+    },
+    {
+      "id": "452",
+      "name": "90 St-Elmhurst Av",
+      "borough": "Queens",
+      "lines": [
+        "7"
+      ],
+      "gtfs_stop_ids": [
+        "708"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "90 St-Elmhurst Av"
+      ]
+    },
+    {
+      "id": "157",
+      "name": "96 St",
+      "borough": "Manhattan",
+      "lines": [
+        "C",
+        "B"
+      ],
+      "gtfs_stop_ids": [
+        "A19"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "96 St"
+      ]
+    },
+    {
+      "id": "310",
+      "name": "96 St",
+      "borough": "Manhattan",
+      "lines": [
+        "1",
+        "2",
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "120"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "96 St"
+      ]
+    },
+    {
+      "id": "396",
+      "name": "96 St",
+      "borough": "Manhattan",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "625"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "96 St"
+      ]
+    },
+    {
+      "id": "475",
+      "name": "96 St",
+      "borough": "Manhattan",
+      "lines": [
+        "Q"
+      ],
+      "gtfs_stop_ids": [
+        "Q05"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "96 St"
+      ]
+    },
+    {
+      "id": "91",
+      "name": "Alabama Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "J",
+        "Z"
+      ],
+      "gtfs_stop_ids": [
+        "J24"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Alabama Av"
+      ]
+    },
+    {
+      "id": "423",
+      "name": "Allerton Av",
+      "borough": "Bronx",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "210"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Allerton Av"
+      ]
+    },
+    {
+      "id": "515",
+      "name": "Annadale",
+      "borough": "Staten Island",
+      "lines": [
+        "SI"
+      ],
+      "gtfs_stop_ids": [
+        "S17"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Annadale"
+      ]
+    },
+    {
+      "id": "196",
+      "name": "Aqueduct Racetrack",
+      "borough": "Queens",
+      "lines": [
+        "A"
+      ],
+      "gtfs_stop_ids": [
+        "H01"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Aqueduct Racetrack"
+      ]
+    },
+    {
+      "id": "197",
+      "name": "Aqueduct-N Conduit Av",
+      "borough": "Queens",
+      "lines": [
+        "A"
+      ],
+      "gtfs_stop_ids": [
+        "H02"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Aqueduct-N Conduit Av"
+      ]
+    },
+    {
+      "id": "523",
+      "name": "Arthur Kill",
+      "borough": "Staten Island",
+      "lines": [
+        "SI"
+      ],
+      "gtfs_stop_ids": [
+        "S11"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Arthur Kill"
+      ]
+    },
+    {
+      "id": "407",
+      "name": "Astor Pl",
+      "borough": "Manhattan",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "636"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Astor Pl"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Astoria Blvd",
+      "borough": "Queens",
+      "lines": [
+        "N",
+        "W"
+      ],
+      "gtfs_stop_ids": [
+        "R03"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Astoria Blvd"
+      ]
+    },
+    {
+      "id": "1",
+      "name": "Astoria-Ditmars Blvd",
+      "borough": "Queens",
+      "lines": [
+        "N",
+        "W"
+      ],
+      "gtfs_stop_ids": [
+        "R01"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Astoria-Ditmars Blvd"
+      ]
+    },
+    {
+      "id": "133",
+      "name": "Atlantic Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "L"
+      ],
+      "gtfs_stop_ids": [
+        "L24"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Atlantic Av"
+      ]
+    },
+    {
+      "id": "27",
+      "name": "Atlantic Av-Barclays Ctr",
+      "borough": "Brooklyn",
+      "lines": [
+        "D",
+        "N",
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "R31"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Atlantic Av-Barclays Ctr"
+      ]
+    },
+    {
+      "id": "338",
+      "name": "Atlantic Av-Barclays Ctr",
+      "borough": "Brooklyn",
+      "lines": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "235"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Atlantic Av-Barclays Ctr"
+      ]
+    },
+    {
+      "id": "40",
+      "name": "Atlantic Av-Barclays Ctr",
+      "borough": "Brooklyn",
+      "lines": [
+        "B",
+        "Q"
+      ],
+      "gtfs_stop_ids": [
+        "D24"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Atlantic Av-Barclays Ctr"
+      ]
+    },
+    {
+      "id": "48",
+      "name": "Avenue H",
+      "borough": "Brooklyn",
+      "lines": [
+        "Q"
+      ],
+      "gtfs_stop_ids": [
+        "D32"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Avenue H"
+      ]
+    },
+    {
+      "id": "246",
+      "name": "Avenue I",
+      "borough": "Brooklyn",
+      "lines": [
+        "F"
+      ],
+      "gtfs_stop_ids": [
+        "F31"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Avenue I"
+      ]
+    },
+    {
+      "id": "49",
+      "name": "Avenue J",
+      "borough": "Brooklyn",
+      "lines": [
+        "Q"
+      ],
+      "gtfs_stop_ids": [
+        "D33"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Avenue J"
+      ]
+    },
+    {
+      "id": "50",
+      "name": "Avenue M",
+      "borough": "Brooklyn",
+      "lines": [
+        "Q"
+      ],
+      "gtfs_stop_ids": [
+        "D34"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Avenue M"
+      ]
+    },
+    {
+      "id": "248",
+      "name": "Avenue N",
+      "borough": "Brooklyn",
+      "lines": [
+        "F"
+      ],
+      "gtfs_stop_ids": [
+        "F33"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Avenue N"
+      ]
+    },
+    {
+      "id": "249",
+      "name": "Avenue P",
+      "borough": "Brooklyn",
+      "lines": [
+        "F"
+      ],
+      "gtfs_stop_ids": [
+        "F34"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Avenue P"
+      ]
+    },
+    {
+      "id": "251",
+      "name": "Avenue U",
+      "borough": "Brooklyn",
+      "lines": [
+        "F"
+      ],
+      "gtfs_stop_ids": [
+        "F36"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Avenue U"
+      ]
+    },
+    {
+      "id": "52",
+      "name": "Avenue U",
+      "borough": "Brooklyn",
+      "lines": [
+        "Q"
+      ],
+      "gtfs_stop_ids": [
+        "D37"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Avenue U"
+      ]
+    },
+    {
+      "id": "78",
+      "name": "Avenue U",
+      "borough": "Brooklyn",
+      "lines": [
+        "N"
+      ],
+      "gtfs_stop_ids": [
+        "N09"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Avenue U"
+      ]
+    },
+    {
+      "id": "252",
+      "name": "Avenue X",
+      "borough": "Brooklyn",
+      "lines": [
+        "F"
+      ],
+      "gtfs_stop_ids": [
+        "F38"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Avenue X"
+      ]
+    },
+    {
+      "id": "70",
+      "name": "Bay 50 St",
+      "borough": "Brooklyn",
+      "lines": [
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "B23"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Bay 50 St"
+      ]
+    },
+    {
+      "id": "247",
+      "name": "Bay Pkwy",
+      "borough": "Brooklyn",
+      "lines": [
+        "F"
+      ],
+      "gtfs_stop_ids": [
+        "F32"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Bay Pkwy"
+      ]
+    },
+    {
+      "id": "68",
+      "name": "Bay Pkwy",
+      "borough": "Brooklyn",
+      "lines": [
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "B21"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Bay Pkwy"
+      ]
+    },
+    {
+      "id": "76",
+      "name": "Bay Pkwy",
+      "borough": "Brooklyn",
+      "lines": [
+        "N"
+      ],
+      "gtfs_stop_ids": [
+        "N07"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Bay Pkwy"
+      ]
+    },
+    {
+      "id": "36",
+      "name": "Bay Ridge Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "R42"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Bay Ridge Av"
+      ]
+    },
+    {
+      "id": "39",
+      "name": "Bay Ridge-95 St",
+      "borough": "Brooklyn",
+      "lines": [
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "R45"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Bay Ridge-95 St"
+      ]
+    },
+    {
+      "id": "512",
+      "name": "Bay Terrace",
+      "borough": "Staten Island",
+      "lines": [
+        "SI"
+      ],
+      "gtfs_stop_ids": [
+        "S20"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Bay Terrace"
+      ]
+    },
+    {
+      "id": "443",
+      "name": "Baychester Av",
+      "borough": "Bronx",
+      "lines": [
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "502"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Baychester Av"
+      ]
+    },
+    {
+      "id": "202",
+      "name": "Beach 105 St",
+      "borough": "Queens",
+      "lines": [
+        "A",
+        "H"
+      ],
+      "gtfs_stop_ids": [
+        "H14"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Beach 105 St"
+      ]
+    },
+    {
+      "id": "208",
+      "name": "Beach 25 St",
+      "borough": "Queens",
+      "lines": [
+        "A"
+      ],
+      "gtfs_stop_ids": [
+        "H10"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Beach 25 St"
+      ]
+    },
+    {
+      "id": "207",
+      "name": "Beach 36 St",
+      "borough": "Queens",
+      "lines": [
+        "A"
+      ],
+      "gtfs_stop_ids": [
+        "H09"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Beach 36 St"
+      ]
+    },
+    {
+      "id": "206",
+      "name": "Beach 44 St",
+      "borough": "Queens",
+      "lines": [
+        "A"
+      ],
+      "gtfs_stop_ids": [
+        "H08"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Beach 44 St"
+      ]
+    },
+    {
+      "id": "205",
+      "name": "Beach 60 St",
+      "borough": "Queens",
+      "lines": [
+        "A"
+      ],
+      "gtfs_stop_ids": [
+        "H07"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Beach 60 St"
+      ]
+    },
+    {
+      "id": "204",
+      "name": "Beach 67 St",
+      "borough": "Queens",
+      "lines": [
+        "A"
+      ],
+      "gtfs_stop_ids": [
+        "H06"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Beach 67 St"
+      ]
+    },
+    {
+      "id": "200",
+      "name": "Beach 90 St",
+      "borough": "Queens",
+      "lines": [
+        "A",
+        "H"
+      ],
+      "gtfs_stop_ids": [
+        "H12"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Beach 90 St"
+      ]
+    },
+    {
+      "id": "201",
+      "name": "Beach 98 St",
+      "borough": "Queens",
+      "lines": [
+        "A",
+        "H"
+      ],
+      "gtfs_stop_ids": [
+        "H13"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Beach 98 St"
+      ]
+    },
+    {
+      "id": "120",
+      "name": "Bedford Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "L"
+      ],
+      "gtfs_stop_ids": [
+        "L08"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Bedford Av"
+      ]
+    },
+    {
+      "id": "211",
+      "name": "Bedford Park Blvd",
+      "borough": "Bronx",
+      "lines": [
+        "B",
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "D03"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Bedford Park Blvd"
+      ]
+    },
+    {
+      "id": "380",
+      "name": "Bedford Park Blvd-Lehman College",
+      "borough": "Bronx",
+      "lines": [
+        "4"
+      ],
+      "gtfs_stop_ids": [
+        "405"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Bedford Park Blvd-Lehman College"
+      ]
+    },
+    {
+      "id": "289",
+      "name": "Bedford-Nostrand Avs",
+      "borough": "Brooklyn",
+      "lines": [
+        "G"
+      ],
+      "gtfs_stop_ids": [
+        "G33"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Bedford-Nostrand Avs"
+      ]
+    },
+    {
+      "id": "236",
+      "name": "Bergen St",
+      "borough": "Brooklyn",
+      "lines": [
+        "F",
+        "G"
+      ],
+      "gtfs_stop_ids": [
+        "F20"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Bergen St"
+      ]
+    },
+    {
+      "id": "339",
+      "name": "Bergen St",
+      "borough": "Brooklyn",
+      "lines": [
+        "2",
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "236"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Bergen St"
+      ]
+    },
+    {
+      "id": "45",
+      "name": "Beverley Rd",
+      "borough": "Brooklyn",
+      "lines": [
+        "Q"
+      ],
+      "gtfs_stop_ids": [
+        "D29"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Beverley Rd"
+      ]
+    },
+    {
+      "id": "357",
+      "name": "Beverly Rd",
+      "borough": "Brooklyn",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "245"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Beverly Rd"
+      ]
+    },
+    {
+      "id": "408",
+      "name": "Bleecker St",
+      "borough": "Manhattan",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "637"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Bleecker St"
+      ]
+    },
+    {
+      "id": "335",
+      "name": "Borough Hall",
+      "borough": "Brooklyn",
+      "lines": [
+        "2",
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "232"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Borough Hall"
+      ]
+    },
+    {
+      "id": "415",
+      "name": "Borough Hall",
+      "borough": "Brooklyn",
+      "lines": [
+        "4",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "423"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Borough Hall"
+      ]
+    },
+    {
+      "id": "142",
+      "name": "Botanic Garden",
+      "borough": "Brooklyn",
+      "lines": [
+        "FS"
+      ],
+      "gtfs_stop_ids": [
+        "S04"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Botanic Garden"
+      ]
+    },
+    {
+      "id": "103",
+      "name": "Bowery",
+      "borough": "Manhattan",
+      "lines": [
+        "J",
+        "Z"
+      ],
+      "gtfs_stop_ids": [
+        "M19"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Bowery"
+      ]
+    },
+    {
+      "id": "414",
+      "name": "Bowling Green",
+      "borough": "Manhattan",
+      "lines": [
+        "4",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "420"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Bowling Green"
+      ]
+    },
+    {
+      "id": "258",
+      "name": "Briarwood",
+      "borough": "Queens",
+      "lines": [
+        "E",
+        "F"
+      ],
+      "gtfs_stop_ids": [
+        "F05"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Briarwood"
+      ]
+    },
+    {
+      "id": "55",
+      "name": "Brighton Beach",
+      "borough": "Brooklyn",
+      "lines": [
+        "B",
+        "Q"
+      ],
+      "gtfs_stop_ids": [
+        "D40"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Brighton Beach"
+      ]
+    },
+    {
+      "id": "199",
+      "name": "Broad Channel",
+      "borough": "Queens",
+      "lines": [
+        "A",
+        "H"
+      ],
+      "gtfs_stop_ids": [
+        "H04"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Broad Channel"
+      ]
+    },
+    {
+      "id": "107",
+      "name": "Broad St",
+      "borough": "Manhattan",
+      "lines": [
+        "J",
+        "Z"
+      ],
+      "gtfs_stop_ids": [
+        "M23"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Broad St"
+      ]
+    },
+    {
+      "id": "286",
+      "name": "Broadway",
+      "borough": "Brooklyn",
+      "lines": [
+        "G"
+      ],
+      "gtfs_stop_ids": [
+        "G30"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Broadway"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Broadway",
+      "borough": "Queens",
+      "lines": [
+        "N",
+        "W"
+      ],
+      "gtfs_stop_ids": [
+        "R05"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Broadway"
+      ]
+    },
+    {
+      "id": "132",
+      "name": "Broadway Junction",
+      "borough": "Brooklyn",
+      "lines": [
+        "L"
+      ],
+      "gtfs_stop_ids": [
+        "L22"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Broadway Junction"
+      ]
+    },
+    {
+      "id": "184",
+      "name": "Broadway Junction",
+      "borough": "Brooklyn",
+      "lines": [
+        "A",
+        "C"
+      ],
+      "gtfs_stop_ids": [
+        "A51"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Broadway Junction"
+      ]
+    },
+    {
+      "id": "92",
+      "name": "Broadway Junction",
+      "borough": "Brooklyn",
+      "lines": [
+        "J",
+        "Z"
+      ],
+      "gtfs_stop_ids": [
+        "J27"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Broadway Junction"
+      ]
+    },
+    {
+      "id": "230",
+      "name": "Broadway-Lafayette St",
+      "borough": "Manhattan",
+      "lines": [
+        "B",
+        "D",
+        "F",
+        "M"
+      ],
+      "gtfs_stop_ids": [
+        "D21"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Broadway-Lafayette St"
+      ]
+    },
+    {
+      "id": "425",
+      "name": "Bronx Park East",
+      "borough": "Bronx",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "212"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Bronx Park East"
+      ]
+    },
+    {
+      "id": "376",
+      "name": "Brook Av",
+      "borough": "Bronx",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "618"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Brook Av"
+      ]
+    },
+    {
+      "id": "411",
+      "name": "Brooklyn Bridge-City Hall",
+      "borough": "Manhattan",
+      "lines": [
+        "4",
+        "5",
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "640"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Brooklyn Bridge-City Hall"
+      ]
+    },
+    {
+      "id": "361",
+      "name": "Buhre Av",
+      "borough": "Bronx",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "602"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Buhre Av"
+      ]
+    },
+    {
+      "id": "422",
+      "name": "Burke Av",
+      "borough": "Bronx",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "209"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Burke Av"
+      ]
+    },
+    {
+      "id": "384",
+      "name": "Burnside Av",
+      "borough": "Bronx",
+      "lines": [
+        "4"
+      ],
+      "gtfs_stop_ids": [
+        "409"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Burnside Av"
+      ]
+    },
+    {
+      "id": "131",
+      "name": "Bushwick Av-Aberdeen St",
+      "borough": "Brooklyn",
+      "lines": [
+        "L"
+      ],
+      "gtfs_stop_ids": [
+        "L21"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Bushwick Av-Aberdeen St"
+      ]
+    },
+    {
+      "id": "104",
+      "name": "Canal St",
+      "borough": "Manhattan",
+      "lines": [
+        "J",
+        "Z"
+      ],
+      "gtfs_stop_ids": [
+        "M20"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Canal St"
+      ]
+    },
+    {
+      "id": "169",
+      "name": "Canal St",
+      "borough": "Manhattan",
+      "lines": [
+        "A",
+        "C",
+        "E"
+      ],
+      "gtfs_stop_ids": [
+        "A34"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Canal St"
+      ]
+    },
+    {
+      "id": "18",
+      "name": "Canal St",
+      "borough": "Manhattan",
+      "lines": [
+        "R",
+        "W"
+      ],
+      "gtfs_stop_ids": [
+        "R23"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Canal St"
+      ]
+    },
+    {
+      "id": "19",
+      "name": "Canal St",
+      "borough": "Manhattan",
+      "lines": [
+        "N",
+        "Q"
+      ],
+      "gtfs_stop_ids": [
+        "Q01"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Canal St"
+      ]
+    },
+    {
+      "id": "325",
+      "name": "Canal St",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "135"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Canal St"
+      ]
+    },
+    {
+      "id": "410",
+      "name": "Canal St",
+      "borough": "Manhattan",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "639"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Canal St"
+      ]
+    },
+    {
+      "id": "138",
+      "name": "Canarsie-Rockaway Pkwy",
+      "borough": "Brooklyn",
+      "lines": [
+        "L"
+      ],
+      "gtfs_stop_ids": [
+        "L29"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Canarsie-Rockaway Pkwy"
+      ]
+    },
+    {
+      "id": "237",
+      "name": "Carroll St",
+      "borough": "Brooklyn",
+      "lines": [
+        "F",
+        "G"
+      ],
+      "gtfs_stop_ids": [
+        "F21"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Carroll St"
+      ]
+    },
+    {
+      "id": "365",
+      "name": "Castle Hill Av",
+      "borough": "Bronx",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "607"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Castle Hill Av"
+      ]
+    },
+    {
+      "id": "155",
+      "name": "Cathedral Pkwy (110 St)",
+      "borough": "Manhattan",
+      "lines": [
+        "C",
+        "B"
+      ],
+      "gtfs_stop_ids": [
+        "A17"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Cathedral Pkwy (110 St)"
+      ]
+    },
+    {
+      "id": "308",
+      "name": "Cathedral Pkwy (110 St)",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "118"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Cathedral Pkwy (110 St)"
+      ]
+    },
+    {
+      "id": "114",
+      "name": "Central Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "M"
+      ],
+      "gtfs_stop_ids": [
+        "M10"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Central Av"
+      ]
+    },
+    {
+      "id": "105",
+      "name": "Chambers St",
+      "borough": "Manhattan",
+      "lines": [
+        "J",
+        "Z"
+      ],
+      "gtfs_stop_ids": [
+        "M21"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Chambers St"
+      ]
+    },
+    {
+      "id": "170",
+      "name": "Chambers St",
+      "borough": "Manhattan",
+      "lines": [
+        "A",
+        "C"
+      ],
+      "gtfs_stop_ids": [
+        "A36"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Chambers St"
+      ]
+    },
+    {
+      "id": "327",
+      "name": "Chambers St",
+      "borough": "Manhattan",
+      "lines": [
+        "1",
+        "2",
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "137"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Chambers St"
+      ]
+    },
+    {
+      "id": "93",
+      "name": "Chauncey St",
+      "borough": "Brooklyn",
+      "lines": [
+        "J",
+        "Z"
+      ],
+      "gtfs_stop_ids": [
+        "J28"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Chauncey St"
+      ]
+    },
+    {
+      "id": "323",
+      "name": "Christopher St-Stonewall",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "133"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Christopher St-Stonewall"
+      ]
+    },
+    {
+      "id": "243",
+      "name": "Church Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "F",
+        "G"
+      ],
+      "gtfs_stop_ids": [
+        "F27"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Church Av"
+      ]
+    },
+    {
+      "id": "356",
+      "name": "Church Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "244"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Church Av"
+      ]
+    },
+    {
+      "id": "44",
+      "name": "Church Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "B",
+        "Q"
+      ],
+      "gtfs_stop_ids": [
+        "D28"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Church Av"
+      ]
+    },
+    {
+      "id": "20",
+      "name": "City Hall",
+      "borough": "Manhattan",
+      "lines": [
+        "R",
+        "W"
+      ],
+      "gtfs_stop_ids": [
+        "R24"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "City Hall"
+      ]
+    },
+    {
+      "id": "334",
+      "name": "Clark St",
+      "borough": "Brooklyn",
+      "lines": [
+        "2",
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "231"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Clark St"
+      ]
+    },
+    {
+      "id": "290",
+      "name": "Classon Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "G"
+      ],
+      "gtfs_stop_ids": [
+        "G34"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Classon Av"
+      ]
+    },
+    {
+      "id": "89",
+      "name": "Cleveland St",
+      "borough": "Brooklyn",
+      "lines": [
+        "J"
+      ],
+      "gtfs_stop_ids": [
+        "J22"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Cleveland St"
+      ]
+    },
+    {
+      "id": "504",
+      "name": "Clifton",
+      "borough": "Staten Island",
+      "lines": [
+        "SI"
+      ],
+      "gtfs_stop_ids": [
+        "S28"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Clifton"
+      ]
+    },
+    {
+      "id": "177",
+      "name": "Clinton-Washington Avs",
+      "borough": "Brooklyn",
+      "lines": [
+        "C"
+      ],
+      "gtfs_stop_ids": [
+        "A44"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Clinton-Washington Avs"
+      ]
+    },
+    {
+      "id": "291",
+      "name": "Clinton-Washington Avs",
+      "borough": "Brooklyn",
+      "lines": [
+        "G"
+      ],
+      "gtfs_stop_ids": [
+        "G35"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Clinton-Washington Avs"
+      ]
+    },
+    {
+      "id": "58",
+      "name": "Coney Island-Stillwell Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "D",
+        "F",
+        "N",
+        "Q"
+      ],
+      "gtfs_stop_ids": [
+        "D43"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Coney Island-Stillwell Av"
+      ]
+    },
+    {
+      "id": "46",
+      "name": "Cortelyou Rd",
+      "borough": "Brooklyn",
+      "lines": [
+        "Q"
+      ],
+      "gtfs_stop_ids": [
+        "D30"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Cortelyou Rd"
+      ]
+    },
+    {
+      "id": "21",
+      "name": "Cortlandt St",
+      "borough": "Manhattan",
+      "lines": [
+        "R",
+        "W"
+      ],
+      "gtfs_stop_ids": [
+        "R25"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Cortlandt St"
+      ]
+    },
+    {
+      "id": "281",
+      "name": "Court Sq",
+      "borough": "Queens",
+      "lines": [
+        "G"
+      ],
+      "gtfs_stop_ids": [
+        "G22"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Court Sq"
+      ]
+    },
+    {
+      "id": "462",
+      "name": "Court Sq",
+      "borough": "Queens",
+      "lines": [
+        "7"
+      ],
+      "gtfs_stop_ids": [
+        "719"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Court Sq"
+      ]
+    },
+    {
+      "id": "274",
+      "name": "Court Sq-23 St",
+      "borough": "Queens",
+      "lines": [
+        "E",
+        "F"
+      ],
+      "gtfs_stop_ids": [
+        "F09"
+      ],
+      "accessibility": "Partially ADA accessible",
+      "accessibility_notes": "Manhattan-bound only",
+      "outage_names": [
+        "Court Sq-23 St"
+      ]
+    },
+    {
+      "id": "24",
+      "name": "Court St",
+      "borough": "Brooklyn",
+      "lines": [
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "R28"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Court St"
+      ]
+    },
+    {
+      "id": "87",
+      "name": "Crescent St",
+      "borough": "Brooklyn",
+      "lines": [
+        "J",
+        "Z"
+      ],
+      "gtfs_stop_ids": [
+        "J20"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Crescent St"
+      ]
+    },
+    {
+      "id": "345",
+      "name": "Crown Hts-Utica Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "3",
+        "4"
+      ],
+      "gtfs_stop_ids": [
+        "250"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Crown Hts-Utica Av"
+      ]
+    },
+    {
+      "id": "375",
+      "name": "Cypress Av",
+      "borough": "Bronx",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "617"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Cypress Av"
+      ]
+    },
+    {
+      "id": "86",
+      "name": "Cypress Hills",
+      "borough": "Brooklyn",
+      "lines": [
+        "J"
+      ],
+      "gtfs_stop_ids": [
+        "J19"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Cypress Hills"
+      ]
+    },
+    {
+      "id": "127",
+      "name": "DeKalb Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "L"
+      ],
+      "gtfs_stop_ids": [
+        "L16"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "DeKalb Av"
+      ]
+    },
+    {
+      "id": "26",
+      "name": "DeKalb Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "B",
+        "Q",
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "R30"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "DeKalb Av"
+      ]
+    },
+    {
+      "id": "102",
+      "name": "Delancey St-Essex St",
+      "borough": "Manhattan",
+      "lines": [
+        "M",
+        "J",
+        "Z"
+      ],
+      "gtfs_stop_ids": [
+        "M18"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Delancey St-Essex St"
+      ]
+    },
+    {
+      "id": "233",
+      "name": "Delancey St-Essex St",
+      "borough": "Manhattan",
+      "lines": [
+        "F"
+      ],
+      "gtfs_stop_ids": [
+        "F15"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Delancey St-Essex St"
+      ]
+    },
+    {
+      "id": "244",
+      "name": "Ditmas Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "F"
+      ],
+      "gtfs_stop_ids": [
+        "F29"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Ditmas Av"
+      ]
+    },
+    {
+      "id": "507",
+      "name": "Dongan Hills",
+      "borough": "Staten Island",
+      "lines": [
+        "SI"
+      ],
+      "gtfs_stop_ids": [
+        "S25"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Dongan Hills"
+      ]
+    },
+    {
+      "id": "144",
+      "name": "Dyckman St",
+      "borough": "Manhattan",
+      "lines": [
+        "A"
+      ],
+      "gtfs_stop_ids": [
+        "A03"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Dyckman St"
+      ]
+    },
+    {
+      "id": "299",
+      "name": "Dyckman St",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "109"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Dyckman St"
+      ]
+    },
+    {
+      "id": "374",
+      "name": "E 143 St-St Mary's St",
+      "borough": "Bronx",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "616"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "E 143 St-St Mary's St"
+      ]
+    },
+    {
+      "id": "373",
+      "name": "E 149 St",
+      "borough": "Bronx",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "615"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "E 149 St"
+      ]
+    },
+    {
+      "id": "426",
+      "name": "E 180 St",
+      "borough": "Bronx",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "213"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "E 180 St"
+      ]
+    },
+    {
+      "id": "137",
+      "name": "East 105 St",
+      "borough": "Brooklyn",
+      "lines": [
+        "L"
+      ],
+      "gtfs_stop_ids": [
+        "L28"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "East 105 St"
+      ]
+    },
+    {
+      "id": "234",
+      "name": "East Broadway",
+      "borough": "Manhattan",
+      "lines": [
+        "F"
+      ],
+      "gtfs_stop_ids": [
+        "F16"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "East Broadway"
+      ]
+    },
+    {
+      "id": "442",
+      "name": "Eastchester-Dyre Av",
+      "borough": "Bronx",
+      "lines": [
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "501"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Eastchester-Dyre Av"
+      ]
+    },
+    {
+      "id": "341",
+      "name": "Eastern Pkwy-Brooklyn Museum",
+      "borough": "Brooklyn",
+      "lines": [
+        "2",
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "238"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Eastern Pkwy-Brooklyn Museum"
+      ]
+    },
+    {
+      "id": "369",
+      "name": "Elder Av",
+      "borough": "Bronx",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "611"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Elder Av"
+      ]
+    },
+    {
+      "id": "266",
+      "name": "Elmhurst Av",
+      "borough": "Queens",
+      "lines": [
+        "M",
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "G13"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Elmhurst Av"
+      ]
+    },
+    {
+      "id": "514",
+      "name": "Eltingville",
+      "borough": "Staten Island",
+      "lines": [
+        "SI"
+      ],
+      "gtfs_stop_ids": [
+        "S18"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Eltingville"
+      ]
+    },
+    {
+      "id": "188",
+      "name": "Euclid Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "A",
+        "C"
+      ],
+      "gtfs_stop_ids": [
+        "A55"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Euclid Av"
+      ]
+    },
+    {
+      "id": "209",
+      "name": "Far Rockaway-Mott Av",
+      "borough": "Queens",
+      "lines": [
+        "A"
+      ],
+      "gtfs_stop_ids": [
+        "H11"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Far Rockaway-Mott Av"
+      ]
+    },
+    {
+      "id": "359",
+      "name": "Flatbush Av-Brooklyn College",
+      "borough": "Brooklyn",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "247"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Flatbush Av-Brooklyn College"
+      ]
+    },
+    {
+      "id": "287",
+      "name": "Flushing Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "G"
+      ],
+      "gtfs_stop_ids": [
+        "G31"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Flushing Av"
+      ]
+    },
+    {
+      "id": "98",
+      "name": "Flushing Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "M",
+        "J"
+      ],
+      "gtfs_stop_ids": [
+        "M12"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Flushing Av"
+      ]
+    },
+    {
+      "id": "447",
+      "name": "Flushing-Main St",
+      "borough": "Queens",
+      "lines": [
+        "7"
+      ],
+      "gtfs_stop_ids": [
+        "701"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Flushing-Main St"
+      ]
+    },
+    {
+      "id": "213",
+      "name": "Fordham Rd",
+      "borough": "Bronx",
+      "lines": [
+        "B",
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "D05"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Fordham Rd"
+      ]
+    },
+    {
+      "id": "382",
+      "name": "Fordham Rd",
+      "borough": "Bronx",
+      "lines": [
+        "4"
+      ],
+      "gtfs_stop_ids": [
+        "407"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Fordham Rd"
+      ]
+    },
+    {
+      "id": "110",
+      "name": "Forest Av",
+      "borough": "Queens",
+      "lines": [
+        "M"
+      ],
+      "gtfs_stop_ids": [
+        "M05"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Forest Av"
+      ]
+    },
+    {
+      "id": "261",
+      "name": "Forest Hills-71 Av",
+      "borough": "Queens",
+      "lines": [
+        "E",
+        "F",
+        "M",
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "G08"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Forest Hills-71 Av"
+      ]
+    },
+    {
+      "id": "242",
+      "name": "Fort Hamilton Pkwy",
+      "borough": "Brooklyn",
+      "lines": [
+        "F",
+        "G"
+      ],
+      "gtfs_stop_ids": [
+        "F26"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Fort Hamilton Pkwy"
+      ]
+    },
+    {
+      "id": "60",
+      "name": "Fort Hamilton Pkwy",
+      "borough": "Brooklyn",
+      "lines": [
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "B13"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Fort Hamilton Pkwy"
+      ]
+    },
+    {
+      "id": "72",
+      "name": "Fort Hamilton Pkwy",
+      "borough": "Brooklyn",
+      "lines": [
+        "N"
+      ],
+      "gtfs_stop_ids": [
+        "N03"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Fort Hamilton Pkwy"
+      ]
+    },
+    {
+      "id": "139",
+      "name": "Franklin Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "FS"
+      ],
+      "gtfs_stop_ids": [
+        "S01"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Franklin Av"
+      ]
+    },
+    {
+      "id": "178",
+      "name": "Franklin Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "C"
+      ],
+      "gtfs_stop_ids": [
+        "A45"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Franklin Av"
+      ]
+    },
+    {
+      "id": "342",
+      "name": "Franklin Av-Medgar Evers College",
+      "borough": "Brooklyn",
+      "lines": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "239"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Franklin Av-Medgar Evers College"
+      ]
+    },
+    {
+      "id": "326",
+      "name": "Franklin St",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "136"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Franklin St"
+      ]
+    },
+    {
+      "id": "429",
+      "name": "Freeman St",
+      "borough": "Bronx",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "216"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Freeman St"
+      ]
+    },
+    {
+      "id": "109",
+      "name": "Fresh Pond Rd",
+      "borough": "Queens",
+      "lines": [
+        "M"
+      ],
+      "gtfs_stop_ids": [
+        "M04"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Fresh Pond Rd"
+      ]
+    },
+    {
+      "id": "292",
+      "name": "Fulton St",
+      "borough": "Brooklyn",
+      "lines": [
+        "G"
+      ],
+      "gtfs_stop_ids": [
+        "G36"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Fulton St"
+      ]
+    },
+    {
+      "id": "106",
+      "name": "Fulton St",
+      "borough": "Manhattan",
+      "lines": [
+        "J",
+        "Z"
+      ],
+      "gtfs_stop_ids": [
+        "M22"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Fulton St"
+      ]
+    },
+    {
+      "id": "172",
+      "name": "Fulton St",
+      "borough": "Manhattan",
+      "lines": [
+        "A",
+        "C"
+      ],
+      "gtfs_stop_ids": [
+        "A38"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Fulton St"
+      ]
+    },
+    {
+      "id": "332",
+      "name": "Fulton St",
+      "borough": "Manhattan",
+      "lines": [
+        "2",
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "229"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Fulton St"
+      ]
+    },
+    {
+      "id": "412",
+      "name": "Fulton St",
+      "borough": "Manhattan",
+      "lines": [
+        "4",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "418"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Fulton St"
+      ]
+    },
+    {
+      "id": "95",
+      "name": "Gates Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "J",
+        "Z"
+      ],
+      "gtfs_stop_ids": [
+        "J30"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Gates Av"
+      ]
+    },
+    {
+      "id": "122",
+      "name": "Graham Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "L"
+      ],
+      "gtfs_stop_ids": [
+        "L11"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Graham Av"
+      ]
+    },
+    {
+      "id": "340",
+      "name": "Grand Army Plaza",
+      "borough": "Brooklyn",
+      "lines": [
+        "2",
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "237"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Grand Army Plaza"
+      ]
+    },
+    {
+      "id": "265",
+      "name": "Grand Av-Newtown",
+      "borough": "Queens",
+      "lines": [
+        "M",
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "G12"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Grand Av-Newtown"
+      ]
+    },
+    {
+      "id": "402",
+      "name": "Grand Central-42 St",
+      "borough": "Manhattan",
+      "lines": [
+        "4",
+        "5",
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "631"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Grand Central-42 St"
+      ]
+    },
+    {
+      "id": "465",
+      "name": "Grand Central-42 St",
+      "borough": "Manhattan",
+      "lines": [
+        "7"
+      ],
+      "gtfs_stop_ids": [
+        "723"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Grand Central-42 St"
+      ]
+    },
+    {
+      "id": "469",
+      "name": "Grand Central-42 St",
+      "borough": "Manhattan",
+      "lines": [
+        "GS"
+      ],
+      "gtfs_stop_ids": [
+        "901"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Grand Central-42 St"
+      ]
+    },
+    {
+      "id": "123",
+      "name": "Grand St",
+      "borough": "Brooklyn",
+      "lines": [
+        "L"
+      ],
+      "gtfs_stop_ids": [
+        "L12"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Grand St"
+      ]
+    },
+    {
+      "id": "231",
+      "name": "Grand St",
+      "borough": "Manhattan",
+      "lines": [
+        "B",
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "D22"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Grand St"
+      ]
+    },
+    {
+      "id": "189",
+      "name": "Grant Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "A"
+      ],
+      "gtfs_stop_ids": [
+        "A57"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Grant Av"
+      ]
+    },
+    {
+      "id": "509",
+      "name": "Grant City",
+      "borough": "Staten Island",
+      "lines": [
+        "SI"
+      ],
+      "gtfs_stop_ids": [
+        "S23"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Grant City"
+      ]
+    },
+    {
+      "id": "505",
+      "name": "Grasmere",
+      "borough": "Staten Island",
+      "lines": [
+        "SI"
+      ],
+      "gtfs_stop_ids": [
+        "S27"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Grasmere"
+      ]
+    },
+    {
+      "id": "513",
+      "name": "Great Kills",
+      "borough": "Staten Island",
+      "lines": [
+        "SI"
+      ],
+      "gtfs_stop_ids": [
+        "S19"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Great Kills"
+      ]
+    },
+    {
+      "id": "283",
+      "name": "Greenpoint Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "G"
+      ],
+      "gtfs_stop_ids": [
+        "G26"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Greenpoint Av"
+      ]
+    },
+    {
+      "id": "421",
+      "name": "Gun Hill Rd",
+      "borough": "Bronx",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "208"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Gun Hill Rd"
+      ]
+    },
+    {
+      "id": "444",
+      "name": "Gun Hill Rd",
+      "borough": "Bronx",
+      "lines": [
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "503"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Gun Hill Rd"
+      ]
+    },
+    {
+      "id": "94",
+      "name": "Halsey St",
+      "borough": "Brooklyn",
+      "lines": [
+        "J"
+      ],
+      "gtfs_stop_ids": [
+        "J29"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Halsey St"
+      ]
+    },
+    {
+      "id": "129",
+      "name": "Halsey St",
+      "borough": "Queens",
+      "lines": [
+        "L"
+      ],
+      "gtfs_stop_ids": [
+        "L19"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Halsey St"
+      ]
+    },
+    {
+      "id": "436",
+      "name": "Harlem-148 St",
+      "borough": "Manhattan",
+      "lines": [
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "301"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Harlem-148 St"
+      ]
+    },
+    {
+      "id": "100",
+      "name": "Hewes St",
+      "borough": "Brooklyn",
+      "lines": [
+        "M",
+        "J"
+      ],
+      "gtfs_stop_ids": [
+        "M14"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Hewes St"
+      ]
+    },
+    {
+      "id": "173",
+      "name": "High St",
+      "borough": "Brooklyn",
+      "lines": [
+        "A",
+        "C"
+      ],
+      "gtfs_stop_ids": [
+        "A40"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "High St"
+      ]
+    },
+    {
+      "id": "324",
+      "name": "Houston St",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "134"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Houston St"
+      ]
+    },
+    {
+      "id": "198",
+      "name": "Howard Beach-JFK Airport",
+      "borough": "Queens",
+      "lines": [
+        "A"
+      ],
+      "gtfs_stop_ids": [
+        "H03"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Howard Beach-JFK Airport"
+      ]
+    },
+    {
+      "id": "336",
+      "name": "Hoyt St",
+      "borough": "Brooklyn",
+      "lines": [
+        "2",
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "233"
+      ],
+      "accessibility": "Partially ADA accessible",
+      "accessibility_notes": "Outbound only",
+      "outage_names": [
+        "Hoyt St"
+      ]
+    },
+    {
+      "id": "175",
+      "name": "Hoyt-Schermerhorn Sts",
+      "borough": "Brooklyn",
+      "lines": [
+        "A",
+        "C",
+        "G"
+      ],
+      "gtfs_stop_ids": [
+        "A42"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Hoyt-Schermerhorn Sts"
+      ]
+    },
+    {
+      "id": "516",
+      "name": "Huguenot",
+      "borough": "Staten Island",
+      "lines": [
+        "SI"
+      ],
+      "gtfs_stop_ids": [
+        "S16"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Huguenot"
+      ]
+    },
+    {
+      "id": "463",
+      "name": "Hunters Point Av",
+      "borough": "Queens",
+      "lines": [
+        "7"
+      ],
+      "gtfs_stop_ids": [
+        "720"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Hunters Point Av"
+      ]
+    },
+    {
+      "id": "371",
+      "name": "Hunts Point Av",
+      "borough": "Bronx",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "613"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Hunts Point Av"
+      ]
+    },
+    {
+      "id": "431",
+      "name": "Intervale Av",
+      "borough": "Bronx",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "218"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Intervale Av"
+      ]
+    },
+    {
+      "id": "143",
+      "name": "Inwood-207 St",
+      "borough": "Manhattan",
+      "lines": [
+        "A"
+      ],
+      "gtfs_stop_ids": [
+        "A02"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Inwood-207 St"
+      ]
+    },
+    {
+      "id": "433",
+      "name": "Jackson Av",
+      "borough": "Bronx",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "220"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Jackson Av"
+      ]
+    },
+    {
+      "id": "267",
+      "name": "Jackson Hts-Roosevelt Av",
+      "borough": "Queens",
+      "lines": [
+        "E",
+        "F",
+        "M",
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "G14"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Jackson Hts-Roosevelt Av"
+      ]
+    },
+    {
+      "id": "278",
+      "name": "Jamaica Center-Parsons/Archer",
+      "borough": "Queens",
+      "lines": [
+        "E",
+        "J",
+        "Z"
+      ],
+      "gtfs_stop_ids": [
+        "G05"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Jamaica Center-Parsons/Archer"
+      ]
+    },
+    {
+      "id": "254",
+      "name": "Jamaica-179 St",
+      "borough": "Queens",
+      "lines": [
+        "F"
+      ],
+      "gtfs_stop_ids": [
+        "F01"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Jamaica-179 St"
+      ]
+    },
+    {
+      "id": "280",
+      "name": "Jamaica-Van Wyck",
+      "borough": "Queens",
+      "lines": [
+        "E"
+      ],
+      "gtfs_stop_ids": [
+        "G07"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Jamaica-Van Wyck"
+      ]
+    },
+    {
+      "id": "174",
+      "name": "Jay St-MetroTech",
+      "borough": "Brooklyn",
+      "lines": [
+        "A",
+        "C",
+        "F"
+      ],
+      "gtfs_stop_ids": [
+        "A41"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Jay St-MetroTech"
+      ]
+    },
+    {
+      "id": "25",
+      "name": "Jay St-MetroTech",
+      "borough": "Brooklyn",
+      "lines": [
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "R29"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Jay St-MetroTech"
+      ]
+    },
+    {
+      "id": "508",
+      "name": "Jefferson Av",
+      "borough": "Staten Island",
+      "lines": [
+        "SI"
+      ],
+      "gtfs_stop_ids": [
+        "S24"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Jefferson Av"
+      ]
+    },
+    {
+      "id": "126",
+      "name": "Jefferson St",
+      "borough": "Brooklyn",
+      "lines": [
+        "L"
+      ],
+      "gtfs_stop_ids": [
+        "L15"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Jefferson St"
+      ]
+    },
+    {
+      "id": "451",
+      "name": "Junction Blvd",
+      "borough": "Queens",
+      "lines": [
+        "7"
+      ],
+      "gtfs_stop_ids": [
+        "707"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Junction Blvd"
+      ]
+    },
+    {
+      "id": "349",
+      "name": "Junius St",
+      "borough": "Brooklyn",
+      "lines": [
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "254"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Junius St"
+      ]
+    },
+    {
+      "id": "259",
+      "name": "Kew Gardens-Union Tpke",
+      "borough": "Queens",
+      "lines": [
+        "E",
+        "F"
+      ],
+      "gtfs_stop_ids": [
+        "F06"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Kew Gardens-Union Tpke"
+      ]
+    },
+    {
+      "id": "250",
+      "name": "Kings Hwy",
+      "borough": "Brooklyn",
+      "lines": [
+        "F"
+      ],
+      "gtfs_stop_ids": [
+        "F35"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Kings Hwy"
+      ]
+    },
+    {
+      "id": "51",
+      "name": "Kings Hwy",
+      "borough": "Brooklyn",
+      "lines": [
+        "B",
+        "Q"
+      ],
+      "gtfs_stop_ids": [
+        "D35"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Kings Hwy"
+      ]
+    },
+    {
+      "id": "77",
+      "name": "Kings Hwy",
+      "borough": "Brooklyn",
+      "lines": [
+        "N"
+      ],
+      "gtfs_stop_ids": [
+        "N08"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Kings Hwy"
+      ]
+    },
+    {
+      "id": "212",
+      "name": "Kingsbridge Rd",
+      "borough": "Bronx",
+      "lines": [
+        "B",
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "D04"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Kingsbridge Rd"
+      ]
+    },
+    {
+      "id": "381",
+      "name": "Kingsbridge Rd",
+      "borough": "Bronx",
+      "lines": [
+        "4"
+      ],
+      "gtfs_stop_ids": [
+        "406"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Kingsbridge Rd"
+      ]
+    },
+    {
+      "id": "344",
+      "name": "Kingston Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "249"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Kingston Av"
+      ]
+    },
+    {
+      "id": "180",
+      "name": "Kingston-Throop Avs",
+      "borough": "Brooklyn",
+      "lines": [
+        "C"
+      ],
+      "gtfs_stop_ids": [
+        "A47"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Kingston-Throop Avs"
+      ]
+    },
+    {
+      "id": "113",
+      "name": "Knickerbocker Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "M"
+      ],
+      "gtfs_stop_ids": [
+        "M09"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Knickerbocker Av"
+      ]
+    },
+    {
+      "id": "96",
+      "name": "Kosciuszko St",
+      "borough": "Brooklyn",
+      "lines": [
+        "J"
+      ],
+      "gtfs_stop_ids": [
+        "J31"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Kosciuszko St"
+      ]
+    },
+    {
+      "id": "176",
+      "name": "Lafayette Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "C"
+      ],
+      "gtfs_stop_ids": [
+        "A43"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Lafayette Av"
+      ]
+    },
+    {
+      "id": "275",
+      "name": "Lexington Av/53 St",
+      "borough": "Manhattan",
+      "lines": [
+        "E",
+        "F"
+      ],
+      "gtfs_stop_ids": [
+        "F11"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Lexington Av/53 St"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Lexington Av/59 St",
+      "borough": "Manhattan",
+      "lines": [
+        "N",
+        "R",
+        "W"
+      ],
+      "gtfs_stop_ids": [
+        "R11"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Lexington Av/59 St"
+      ]
+    },
+    {
+      "id": "223",
+      "name": "Lexington Av/63 St",
+      "borough": "Manhattan",
+      "lines": [
+        "M",
+        "Q"
+      ],
+      "gtfs_stop_ids": [
+        "B08"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Lexington Av/63 St"
+      ]
+    },
+    {
+      "id": "185",
+      "name": "Liberty Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "C"
+      ],
+      "gtfs_stop_ids": [
+        "A52"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Liberty Av"
+      ]
+    },
+    {
+      "id": "135",
+      "name": "Livonia Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "L"
+      ],
+      "gtfs_stop_ids": [
+        "L26"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Livonia Av"
+      ]
+    },
+    {
+      "id": "372",
+      "name": "Longwood Av",
+      "borough": "Bronx",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "614"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Longwood Av"
+      ]
+    },
+    {
+      "id": "121",
+      "name": "Lorimer St",
+      "borough": "Brooklyn",
+      "lines": [
+        "L"
+      ],
+      "gtfs_stop_ids": [
+        "L10"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Lorimer St"
+      ]
+    },
+    {
+      "id": "99",
+      "name": "Lorimer St",
+      "borough": "Brooklyn",
+      "lines": [
+        "M",
+        "J"
+      ],
+      "gtfs_stop_ids": [
+        "M13"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Lorimer St"
+      ]
+    },
+    {
+      "id": "296",
+      "name": "Marble Hill-225 St",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "106"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Marble Hill-225 St"
+      ]
+    },
+    {
+      "id": "101",
+      "name": "Marcy Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "M",
+        "J",
+        "Z"
+      ],
+      "gtfs_stop_ids": [
+        "M16"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Marcy Av"
+      ]
+    },
+    {
+      "id": "285",
+      "name": "Metropolitan Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "G"
+      ],
+      "gtfs_stop_ids": [
+        "G29"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Metropolitan Av"
+      ]
+    },
+    {
+      "id": "448",
+      "name": "Mets-Willets Point",
+      "borough": "Queens",
+      "lines": [
+        "7"
+      ],
+      "gtfs_stop_ids": [
+        "702"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Mets-Willets Point"
+      ]
+    },
+    {
+      "id": "108",
+      "name": "Middle Village-Metropolitan Av",
+      "borough": "Queens",
+      "lines": [
+        "M"
+      ],
+      "gtfs_stop_ids": [
+        "M01"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Middle Village-Metropolitan Av"
+      ]
+    },
+    {
+      "id": "362",
+      "name": "Middletown Rd",
+      "borough": "Bronx",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "603"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Middletown Rd"
+      ]
+    },
+    {
+      "id": "124",
+      "name": "Montrose Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "L"
+      ],
+      "gtfs_stop_ids": [
+        "L13"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Montrose Av"
+      ]
+    },
+    {
+      "id": "125",
+      "name": "Morgan Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "L"
+      ],
+      "gtfs_stop_ids": [
+        "L14"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Morgan Av"
+      ]
+    },
+    {
+      "id": "446",
+      "name": "Morris Park",
+      "borough": "Bronx",
+      "lines": [
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "505"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Morris Park"
+      ]
+    },
+    {
+      "id": "368",
+      "name": "Morrison Av-Soundview",
+      "borough": "Bronx",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "610"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Morrison Av-Soundview"
+      ]
+    },
+    {
+      "id": "379",
+      "name": "Mosholu Pkwy",
+      "borough": "Bronx",
+      "lines": [
+        "4"
+      ],
+      "gtfs_stop_ids": [
+        "402"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Mosholu Pkwy"
+      ]
+    },
+    {
+      "id": "386",
+      "name": "Mt Eden Av",
+      "borough": "Bronx",
+      "lines": [
+        "4"
+      ],
+      "gtfs_stop_ids": [
+        "411"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Mt Eden Av"
+      ]
+    },
+    {
+      "id": "97",
+      "name": "Myrtle Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "M",
+        "J",
+        "Z"
+      ],
+      "gtfs_stop_ids": [
+        "M11"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Myrtle Av"
+      ]
+    },
+    {
+      "id": "288",
+      "name": "Myrtle-Willoughby Avs",
+      "borough": "Brooklyn",
+      "lines": [
+        "G"
+      ],
+      "gtfs_stop_ids": [
+        "G32"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Myrtle-Willoughby Avs"
+      ]
+    },
+    {
+      "id": "112",
+      "name": "Myrtle-Wyckoff Avs",
+      "borough": "Brooklyn",
+      "lines": [
+        "M"
+      ],
+      "gtfs_stop_ids": [
+        "M08"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Myrtle-Wyckoff Avs"
+      ]
+    },
+    {
+      "id": "128",
+      "name": "Myrtle-Wyckoff Avs",
+      "borough": "Brooklyn",
+      "lines": [
+        "L"
+      ],
+      "gtfs_stop_ids": [
+        "L17"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Myrtle-Wyckoff Avs"
+      ]
+    },
+    {
+      "id": "284",
+      "name": "Nassau Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "G"
+      ],
+      "gtfs_stop_ids": [
+        "G28"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Nassau Av"
+      ]
+    },
+    {
+      "id": "53",
+      "name": "Neck Rd",
+      "borough": "Brooklyn",
+      "lines": [
+        "Q"
+      ],
+      "gtfs_stop_ids": [
+        "D38"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Neck Rd"
+      ]
+    },
+    {
+      "id": "253",
+      "name": "Neptune Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "F"
+      ],
+      "gtfs_stop_ids": [
+        "F39"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Neptune Av"
+      ]
+    },
+    {
+      "id": "417",
+      "name": "Nereid Av",
+      "borough": "Bronx",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "204"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Nereid Av"
+      ]
+    },
+    {
+      "id": "337",
+      "name": "Nevins St",
+      "borough": "Brooklyn",
+      "lines": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "234"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Nevins St"
+      ]
+    },
+    {
+      "id": "510",
+      "name": "New Dorp",
+      "borough": "Staten Island",
+      "lines": [
+        "SI"
+      ],
+      "gtfs_stop_ids": [
+        "S22"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "New Dorp"
+      ]
+    },
+    {
+      "id": "136",
+      "name": "New Lots Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "L"
+      ],
+      "gtfs_stop_ids": [
+        "L27"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "New Lots Av"
+      ]
+    },
+    {
+      "id": "352",
+      "name": "New Lots Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "257"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "New Lots Av"
+      ]
+    },
+    {
+      "id": "73",
+      "name": "New Utrecht Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "N"
+      ],
+      "gtfs_stop_ids": [
+        "N04"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "New Utrecht Av"
+      ]
+    },
+    {
+      "id": "358",
+      "name": "Newkirk Av-Little Haiti",
+      "borough": "Brooklyn",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "246"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Newkirk Av-Little Haiti"
+      ]
+    },
+    {
+      "id": "47",
+      "name": "Newkirk Plaza",
+      "borough": "Brooklyn",
+      "lines": [
+        "B",
+        "Q"
+      ],
+      "gtfs_stop_ids": [
+        "D31"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Newkirk Plaza"
+      ]
+    },
+    {
+      "id": "269",
+      "name": "Northern Blvd",
+      "borough": "Queens",
+      "lines": [
+        "M",
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "G16"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Northern Blvd"
+      ]
+    },
+    {
+      "id": "88",
+      "name": "Norwood Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "J",
+        "Z"
+      ],
+      "gtfs_stop_ids": [
+        "J21"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Norwood Av"
+      ]
+    },
+    {
+      "id": "210",
+      "name": "Norwood-205 St",
+      "borough": "Bronx",
+      "lines": [
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "D01"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Norwood-205 St"
+      ]
+    },
+    {
+      "id": "179",
+      "name": "Nostrand Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "A",
+        "C"
+      ],
+      "gtfs_stop_ids": [
+        "A46"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Nostrand Av"
+      ]
+    },
+    {
+      "id": "343",
+      "name": "Nostrand Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "248"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Nostrand Av"
+      ]
+    },
+    {
+      "id": "511",
+      "name": "Oakwood Heights",
+      "borough": "Staten Island",
+      "lines": [
+        "SI"
+      ],
+      "gtfs_stop_ids": [
+        "S21"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Oakwood Heights"
+      ]
+    },
+    {
+      "id": "56",
+      "name": "Ocean Pkwy",
+      "borough": "Brooklyn",
+      "lines": [
+        "Q"
+      ],
+      "gtfs_stop_ids": [
+        "D41"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Ocean Pkwy"
+      ]
+    },
+    {
+      "id": "506",
+      "name": "Old Town",
+      "borough": "Staten Island",
+      "lines": [
+        "SI"
+      ],
+      "gtfs_stop_ids": [
+        "S26"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Old Town"
+      ]
+    },
+    {
+      "id": "195",
+      "name": "Ozone Park-Lefferts Blvd",
+      "borough": "Queens",
+      "lines": [
+        "A"
+      ],
+      "gtfs_stop_ids": [
+        "A65"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Ozone Park-Lefferts Blvd"
+      ]
+    },
+    {
+      "id": "141",
+      "name": "Park Pl",
+      "borough": "Brooklyn",
+      "lines": [
+        "FS"
+      ],
+      "gtfs_stop_ids": [
+        "S03"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Park Pl"
+      ]
+    },
+    {
+      "id": "331",
+      "name": "Park Place",
+      "borough": "Manhattan",
+      "lines": [
+        "2",
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "228"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Park Place"
+      ]
+    },
+    {
+      "id": "366",
+      "name": "Parkchester",
+      "borough": "Bronx",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "608"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Parkchester"
+      ]
+    },
+    {
+      "id": "43",
+      "name": "Parkside Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "Q"
+      ],
+      "gtfs_stop_ids": [
+        "D27"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Parkside Av"
+      ]
+    },
+    {
+      "id": "256",
+      "name": "Parsons Blvd",
+      "borough": "Queens",
+      "lines": [
+        "F"
+      ],
+      "gtfs_stop_ids": [
+        "F03"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Parsons Blvd"
+      ]
+    },
+    {
+      "id": "360",
+      "name": "Pelham Bay Park",
+      "borough": "Bronx",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "601"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Pelham Bay Park"
+      ]
+    },
+    {
+      "id": "424",
+      "name": "Pelham Pkwy",
+      "borough": "Bronx",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "211"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Pelham Pkwy"
+      ]
+    },
+    {
+      "id": "445",
+      "name": "Pelham Pkwy",
+      "borough": "Bronx",
+      "lines": [
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "504"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Pelham Pkwy"
+      ]
+    },
+    {
+      "id": "350",
+      "name": "Pennsylvania Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "255"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Pennsylvania Av"
+      ]
+    },
+    {
+      "id": "518",
+      "name": "Pleasant Plains",
+      "borough": "Staten Island",
+      "lines": [
+        "SI"
+      ],
+      "gtfs_stop_ids": [
+        "S14"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Pleasant Plains"
+      ]
+    },
+    {
+      "id": "353",
+      "name": "President St-Medgar Evers College",
+      "borough": "Brooklyn",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "241"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "President St-Medgar Evers College"
+      ]
+    },
+    {
+      "id": "17",
+      "name": "Prince St",
+      "borough": "Manhattan",
+      "lines": [
+        "R",
+        "W"
+      ],
+      "gtfs_stop_ids": [
+        "R22"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Prince St"
+      ]
+    },
+    {
+      "id": "517",
+      "name": "Prince's Bay",
+      "borough": "Staten Island",
+      "lines": [
+        "SI"
+      ],
+      "gtfs_stop_ids": [
+        "S15"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Prince's Bay"
+      ]
+    },
+    {
+      "id": "432",
+      "name": "Prospect Av",
+      "borough": "Bronx",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "219"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Prospect Av"
+      ]
+    },
+    {
+      "id": "30",
+      "name": "Prospect Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "R34"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Prospect Av"
+      ]
+    },
+    {
+      "id": "42",
+      "name": "Prospect Park",
+      "borough": "Brooklyn",
+      "lines": [
+        "B",
+        "Q",
+        "FS"
+      ],
+      "gtfs_stop_ids": [
+        "D26"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Prospect Park"
+      ]
+    },
+    {
+      "id": "273",
+      "name": "Queens Plaza",
+      "borough": "Queens",
+      "lines": [
+        "E",
+        "F",
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "G21"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Queens Plaza"
+      ]
+    },
+    {
+      "id": "461",
+      "name": "Queensboro Plaza",
+      "borough": "Queens",
+      "lines": [
+        "7",
+        "N",
+        "W"
+      ],
+      "gtfs_stop_ids": [
+        "718",
+        "R09"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Queensboro Plaza"
+      ]
+    },
+    {
+      "id": "182",
+      "name": "Ralph Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "C"
+      ],
+      "gtfs_stop_ids": [
+        "A49"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Ralph Av"
+      ]
+    },
+    {
+      "id": "22",
+      "name": "Rector St",
+      "borough": "Manhattan",
+      "lines": [
+        "R",
+        "W"
+      ],
+      "gtfs_stop_ids": [
+        "R26"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Rector St"
+      ]
+    },
+    {
+      "id": "329",
+      "name": "Rector St",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "139"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Rector St"
+      ]
+    },
+    {
+      "id": "519",
+      "name": "Richmond Valley",
+      "borough": "Staten Island",
+      "lines": [
+        "SI"
+      ],
+      "gtfs_stop_ids": [
+        "S13"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Richmond Valley"
+      ]
+    },
+    {
+      "id": "183",
+      "name": "Rockaway Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "C"
+      ],
+      "gtfs_stop_ids": [
+        "A50"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Rockaway Av"
+      ]
+    },
+    {
+      "id": "348",
+      "name": "Rockaway Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "253"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Rockaway Av"
+      ]
+    },
+    {
+      "id": "192",
+      "name": "Rockaway Blvd",
+      "borough": "Queens",
+      "lines": [
+        "A"
+      ],
+      "gtfs_stop_ids": [
+        "A61"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Rockaway Blvd"
+      ]
+    },
+    {
+      "id": "203",
+      "name": "Rockaway Park-Beach 116 St",
+      "borough": "Queens",
+      "lines": [
+        "A",
+        "H"
+      ],
+      "gtfs_stop_ids": [
+        "H15"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Rockaway Park-Beach 116 St"
+      ]
+    },
+    {
+      "id": "222",
+      "name": "Roosevelt Island",
+      "borough": "Manhattan",
+      "lines": [
+        "M"
+      ],
+      "gtfs_stop_ids": [
+        "B06"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Roosevelt Island"
+      ]
+    },
+    {
+      "id": "347",
+      "name": "Saratoga Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "252"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Saratoga Av"
+      ]
+    },
+    {
+      "id": "111",
+      "name": "Seneca Av",
+      "borough": "Queens",
+      "lines": [
+        "M"
+      ],
+      "gtfs_stop_ids": [
+        "M06"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Seneca Av"
+      ]
+    },
+    {
+      "id": "54",
+      "name": "Sheepshead Bay",
+      "borough": "Brooklyn",
+      "lines": [
+        "B",
+        "Q"
+      ],
+      "gtfs_stop_ids": [
+        "D39"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Sheepshead Bay"
+      ]
+    },
+    {
+      "id": "187",
+      "name": "Shepherd Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "C"
+      ],
+      "gtfs_stop_ids": [
+        "A54"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Shepherd Av"
+      ]
+    },
+    {
+      "id": "430",
+      "name": "Simpson St",
+      "borough": "Bronx",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "217"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Simpson St"
+      ]
+    },
+    {
+      "id": "238",
+      "name": "Smith-9 Sts",
+      "borough": "Brooklyn",
+      "lines": [
+        "F",
+        "G"
+      ],
+      "gtfs_stop_ids": [
+        "F22"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Smith-9 Sts"
+      ]
+    },
+    {
+      "id": "330",
+      "name": "South Ferry",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "142"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "South Ferry"
+      ]
+    },
+    {
+      "id": "168",
+      "name": "Spring St",
+      "borough": "Manhattan",
+      "lines": [
+        "C",
+        "E"
+      ],
+      "gtfs_stop_ids": [
+        "A33"
+      ],
+      "accessibility": "Partially ADA accessible",
+      "accessibility_notes": "Downtown only",
+      "outage_names": [
+        "Spring St"
+      ]
+    },
+    {
+      "id": "409",
+      "name": "Spring St",
+      "borough": "Manhattan",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "638"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Spring St"
+      ]
+    },
+    {
+      "id": "501",
+      "name": "St George",
+      "borough": "Staten Island",
+      "lines": [
+        "SI"
+      ],
+      "gtfs_stop_ids": [
+        "S31"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "St George"
+      ]
+    },
+    {
+      "id": "367",
+      "name": "St Lawrence Av",
+      "borough": "Bronx",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "609"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "St Lawrence Av"
+      ]
+    },
+    {
+      "id": "503",
+      "name": "Stapleton",
+      "borough": "Staten Island",
+      "lines": [
+        "SI"
+      ],
+      "gtfs_stop_ids": [
+        "S29"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Stapleton"
+      ]
+    },
+    {
+      "id": "271",
+      "name": "Steinway St",
+      "borough": "Queens",
+      "lines": [
+        "M",
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "G19"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Steinway St"
+      ]
+    },
+    {
+      "id": "354",
+      "name": "Sterling St",
+      "borough": "Brooklyn",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "242"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Sterling St"
+      ]
+    },
+    {
+      "id": "257",
+      "name": "Sutphin Blvd",
+      "borough": "Queens",
+      "lines": [
+        "F"
+      ],
+      "gtfs_stop_ids": [
+        "F04"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Sutphin Blvd"
+      ]
+    },
+    {
+      "id": "279",
+      "name": "Sutphin Blvd-Archer Av-JFK Airport",
+      "borough": "Queens",
+      "lines": [
+        "E",
+        "J",
+        "Z"
+      ],
+      "gtfs_stop_ids": [
+        "G06"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Sutphin Blvd-Archer Av-JFK Airport"
+      ]
+    },
+    {
+      "id": "134",
+      "name": "Sutter Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "L"
+      ],
+      "gtfs_stop_ids": [
+        "L25"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Sutter Av"
+      ]
+    },
+    {
+      "id": "346",
+      "name": "Sutter Av-Rutland Rd",
+      "borough": "Brooklyn",
+      "lines": [
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "251"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Sutter Av-Rutland Rd"
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Times Sq-42 St",
+      "borough": "Manhattan",
+      "lines": [
+        "N",
+        "Q",
+        "R",
+        "W"
+      ],
+      "gtfs_stop_ids": [
+        "R16"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Times Sq-42 St"
+      ]
+    },
+    {
+      "id": "317",
+      "name": "Times Sq-42 St",
+      "borough": "Manhattan",
+      "lines": [
+        "1",
+        "2",
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "127"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Times Sq-42 St"
+      ]
+    },
+    {
+      "id": "467",
+      "name": "Times Sq-42 St",
+      "borough": "Manhattan",
+      "lines": [
+        "7"
+      ],
+      "gtfs_stop_ids": [
+        "725"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Times Sq-42 St"
+      ]
+    },
+    {
+      "id": "468",
+      "name": "Times Sq-42 St",
+      "borough": "Manhattan",
+      "lines": [
+        "GS"
+      ],
+      "gtfs_stop_ids": [
+        "902"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Times Sq-42 St"
+      ]
+    },
+    {
+      "id": "502",
+      "name": "Tompkinsville",
+      "borough": "Staten Island",
+      "lines": [
+        "SI"
+      ],
+      "gtfs_stop_ids": [
+        "S30"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Tompkinsville"
+      ]
+    },
+    {
+      "id": "522",
+      "name": "Tottenville",
+      "borough": "Staten Island",
+      "lines": [
+        "SI"
+      ],
+      "gtfs_stop_ids": [
+        "S09"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Tottenville"
+      ]
+    },
+    {
+      "id": "215",
+      "name": "Tremont Av",
+      "borough": "Bronx",
+      "lines": [
+        "B",
+        "D"
+      ],
+      "gtfs_stop_ids": [
+        "D07"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Tremont Av"
+      ]
+    },
+    {
+      "id": "28",
+      "name": "Union St",
+      "borough": "Brooklyn",
+      "lines": [
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "R32"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Union St"
+      ]
+    },
+    {
+      "id": "181",
+      "name": "Utica Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "A",
+        "C"
+      ],
+      "gtfs_stop_ids": [
+        "A48"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Utica Av"
+      ]
+    },
+    {
+      "id": "293",
+      "name": "Van Cortlandt Park-242 St",
+      "borough": "Bronx",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "101"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Van Cortlandt Park-242 St"
+      ]
+    },
+    {
+      "id": "186",
+      "name": "Van Siclen Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "C"
+      ],
+      "gtfs_stop_ids": [
+        "A53"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Van Siclen Av"
+      ]
+    },
+    {
+      "id": "351",
+      "name": "Van Siclen Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "256"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Van Siclen Av"
+      ]
+    },
+    {
+      "id": "90",
+      "name": "Van Siclen Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "J",
+        "Z"
+      ],
+      "gtfs_stop_ids": [
+        "J23"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Van Siclen Av"
+      ]
+    },
+    {
+      "id": "464",
+      "name": "Vernon Blvd-Jackson Av",
+      "borough": "Queens",
+      "lines": [
+        "7"
+      ],
+      "gtfs_stop_ids": [
+        "721"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Vernon Blvd-Jackson Av"
+      ]
+    },
+    {
+      "id": "167",
+      "name": "W 4 St-Wash Sq",
+      "borough": "Manhattan",
+      "lines": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "M"
+      ],
+      "gtfs_stop_ids": [
+        "A32",
+        "D20"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "W 4 St-Wash Sq"
+      ]
+    },
+    {
+      "id": "57",
+      "name": "W 8 St-NY Aquarium",
+      "borough": "Brooklyn",
+      "lines": [
+        "F",
+        "Q"
+      ],
+      "gtfs_stop_ids": [
+        "D42"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "W 8 St-NY Aquarium"
+      ]
+    },
+    {
+      "id": "328",
+      "name": "WTC Cortlandt",
+      "borough": "Manhattan",
+      "lines": [
+        "1"
+      ],
+      "gtfs_stop_ids": [
+        "138"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "WTC Cortlandt"
+      ]
+    },
+    {
+      "id": "416",
+      "name": "Wakefield-241 St",
+      "borough": "Bronx",
+      "lines": [
+        "2"
+      ],
+      "gtfs_stop_ids": [
+        "201"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Wakefield-241 St"
+      ]
+    },
+    {
+      "id": "333",
+      "name": "Wall St",
+      "borough": "Manhattan",
+      "lines": [
+        "2",
+        "3"
+      ],
+      "gtfs_stop_ids": [
+        "230"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Wall St"
+      ]
+    },
+    {
+      "id": "413",
+      "name": "Wall St",
+      "borough": "Manhattan",
+      "lines": [
+        "4",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "419"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Wall St"
+      ]
+    },
+    {
+      "id": "427",
+      "name": "West Farms Sq-E Tremont Av",
+      "borough": "Bronx",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "214"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "West Farms Sq-E Tremont Av"
+      ]
+    },
+    {
+      "id": "363",
+      "name": "Westchester Sq-E Tremont Av",
+      "borough": "Bronx",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "604"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Westchester Sq-E Tremont Av"
+      ]
+    },
+    {
+      "id": "23",
+      "name": "Whitehall St-South Ferry",
+      "borough": "Manhattan",
+      "lines": [
+        "R",
+        "W"
+      ],
+      "gtfs_stop_ids": [
+        "R27"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Whitehall St-South Ferry"
+      ]
+    },
+    {
+      "id": "370",
+      "name": "Whitlock Av",
+      "borough": "Bronx",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "612"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Whitlock Av"
+      ]
+    },
+    {
+      "id": "130",
+      "name": "Wilson Av",
+      "borough": "Brooklyn",
+      "lines": [
+        "L"
+      ],
+      "gtfs_stop_ids": [
+        "L20"
+      ],
+      "accessibility": "Partially ADA accessible",
+      "accessibility_notes": "Manhattan-bound only",
+      "outage_names": [
+        "Wilson Av"
+      ]
+    },
+    {
+      "id": "355",
+      "name": "Winthrop St",
+      "borough": "Brooklyn",
+      "lines": [
+        "2",
+        "5"
+      ],
+      "gtfs_stop_ids": [
+        "243"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Winthrop St"
+      ]
+    },
+    {
+      "id": "264",
+      "name": "Woodhaven Blvd",
+      "borough": "Queens",
+      "lines": [
+        "M",
+        "R"
+      ],
+      "gtfs_stop_ids": [
+        "G11"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Woodhaven Blvd"
+      ]
+    },
+    {
+      "id": "83",
+      "name": "Woodhaven Blvd",
+      "borough": "Queens",
+      "lines": [
+        "J",
+        "Z"
+      ],
+      "gtfs_stop_ids": [
+        "J15"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Woodhaven Blvd"
+      ]
+    },
+    {
+      "id": "378",
+      "name": "Woodlawn",
+      "borough": "Bronx",
+      "lines": [
+        "4"
+      ],
+      "gtfs_stop_ids": [
+        "401"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Woodlawn"
+      ]
+    },
+    {
+      "id": "171",
+      "name": "World Trade Center",
+      "borough": "Manhattan",
+      "lines": [
+        "E"
+      ],
+      "gtfs_stop_ids": [
+        "E01"
+      ],
+      "accessibility": "ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "World Trade Center"
+      ]
+    },
+    {
+      "id": "235",
+      "name": "York St",
+      "borough": "Brooklyn",
+      "lines": [
+        "F"
+      ],
+      "gtfs_stop_ids": [
+        "F18"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "York St"
+      ]
+    },
+    {
+      "id": "364",
+      "name": "Zerega Av",
+      "borough": "Bronx",
+      "lines": [
+        "6"
+      ],
+      "gtfs_stop_ids": [
+        "606"
+      ],
+      "accessibility": "Not ADA accessible",
+      "accessibility_notes": "",
+      "outage_names": [
+        "Zerega Av"
+      ]
+    }
+  ]
+}

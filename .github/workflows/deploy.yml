@@ -1,11 +1,63 @@
-name: Deploy to Elastic Beanstalk
+name: CI and Deploy
 
 on:
   push:
+    branches: ["**"]
+  pull_request:
     branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
+  tests:
+    name: Tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+            requirements-test.txt
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Install Python test dependencies
+        run: python -m pip install -r requirements-test.txt
+
+      - name: Install frontend test dependencies
+        run: npm ci
+
+      - name: Check Django configuration and migrations
+        run: |
+          python manage.py check
+          python manage.py makemigrations --check --dry-run
+          python manage.py migrate --noinput
+
+      - name: Run backend tests
+        run: python manage.py test myapp --verbosity 2
+
+      - name: Run frontend tests
+        run: npm test
+
+      - name: Verify static files can be collected
+        run: python manage.py collectstatic --noinput
+
   deploy:
+    name: Deploy to AWS
+    needs: tests
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
